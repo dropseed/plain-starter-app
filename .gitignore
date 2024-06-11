@@ -1,0 +1,13 @@
+# Bolt temporary files
+/.bolt
+
+# Python files
+__pycache__
+
+# Virtual environment
+/.venv
+
+# env files
+/.env*
+!/.env.example
+!/.env*.encrypted

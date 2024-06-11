@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "app"
+version = "0.0.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bolt = {git = "https://github.com/dropseed/bolt", branch = "main"}
+bolt-db = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-db"}
+bolt-auth = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-auth"}
+bolt-code = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-code"}
+bolt-passwords = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-passwords"}
+bolt-pytest = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-pytest"}
+bolt-sessions = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-sessions"}
+bolt-staff = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-staff"}
+bolt-tailwind = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-tailwind"}
+
+[tool.poetry.group.dev.dependencies]
+bolt-dev = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-dev"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

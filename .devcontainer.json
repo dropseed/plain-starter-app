@@ -1,0 +1,23 @@
+{
+    "onCreateCommand": "pipx install poetry",
+    "updateContentCommand": "./scripts/install",
+    "postCreateCommand": "",
+    "postAttachCommand": "poetry run bolt dev",
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "app/templates/example.html",
+                "app/urls.py"
+            ]
+        }
+    },
+    "portsAttributes": {
+        "8000": {
+            "label": "Bolt Dev",
+            "onAutoForward": "openBrowserOnce"
+        }
+    },
+    "forwardPorts": [
+        8000
+    ]
+}
