@@ -19,6 +19,12 @@ bolt-tailwind = {git = "https://github.com/dropseed/bolt", branch = "main", subd
 [tool.poetry.group.dev.dependencies]
 bolt-dev = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-dev"}
 
+[tool.bolt.dev.services]
+postgres = {cmd = "docker run --name app-postgres --rm -p 54323:5432 -v $(pwd)/.bolt/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
+
+[tool.bolt.tailwind]
+version = "3.4.4"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
