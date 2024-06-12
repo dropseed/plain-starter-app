@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-bolt = {git = "https://github.com/dropseed/bolt", branch = "main"}
+bolt = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt"}
 bolt-db = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-db"}
 bolt-auth = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-auth"}
 bolt-code = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-code"}
@@ -15,6 +15,7 @@ bolt-pytest = {git = "https://github.com/dropseed/bolt", branch = "main", subdir
 bolt-sessions = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-sessions"}
 bolt-staff = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-staff"}
 bolt-tailwind = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-tailwind"}
+bolt-htmx = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-htmx"}
 
 [tool.poetry.group.dev.dependencies]
 bolt-dev = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-dev"}

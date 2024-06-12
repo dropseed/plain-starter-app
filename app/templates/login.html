@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="." method="post" class="max-w-md mt-20 mx-auto flex flex-col">
+    {{ csrf_input }}
+
+    <h1 class="text-5xl tracking-tight text-center">Welcome!</h1>
+
+    <br>
+
+    {% for error in form.non_field_errors %}
+    <div class="text-red-500 text-center border-red-500 border rounded-md p-2">{{ error }}</div>
+    {% endfor %}
+
+    <br>
+
+    <label class="text-sm text-zinc-800" for="{{ form.email.html_id }}">Email</label>
+    <input
+        class="border rounded-md text-lg px-2 py-1 mt-1"
+        type="email"
+        name="{{ form.email.html_name }}"
+        id="{{ form.email.html_id }}"
+        value="{{ form.email.value() or '' }}"
+        autocomplete="email"
+        autofocus
+        required>
+
+    <br>
+
+    <label class="text-sm text-zinc-800" for="{{ form.password.html_id }}">Password</label>
+    <input
+        class="border rounded-md text-lg px-2 py-1 mt-1"
+        type="password"
+        name="{{ form.password.html_name }}"
+        id="{{ form.password.html_id }}"
+        autcomplete="current-password"
+        required>
+
+    <button class="bg-black hover:bg-black/80 rounded-md text-white mt-6 px-4 py-2 text-center" type="submit">Log in</button>
+
+    <div class="mt-6 text-center">
+        <a href="{{ url('signup') }}" class="text-center text-sm text-zinc-500 hover:underline">Create a new account →</a>
+    </div>
+</form>
+
+{% endblock %}

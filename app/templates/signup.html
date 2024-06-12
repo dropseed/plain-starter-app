@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="." method="post" class="max-w-md mt-20 mx-auto flex flex-col">
+    {{ csrf_input }}
+
+    <h1 class="text-5xl text-center tracking-tight">Create an account</h1>
+
+    <br>
+
+    {% for error in form.non_field_errors %}
+    <div class="text-red-500 text-center border-red-500 border rounded-md p-2">{{ error }}</div>
+    {% endfor %}
+
+    <br>
+
+    <label class="text-sm text-zinc-800" for="{{ form.email.html_id }}">Email</label>
+    <input
+        class="border rounded-md text-lg px-2 py-1 mt-1"
+        type="email"
+        name="{{ form.email.html_name }}"
+        id="{{ form.email.html_id }}"
+        value="{{ form.email.value() or '' }}"
+        autocomplete="email"
+        autofocus
+        required>
+    {% if form.email.errors %}
+    <div class="text-red-500 mt-1 text-sm">{{ form.email.errors|join(', ') }}</div>
+    {% endif %}
+
+    <br>
+
+    <label class="text-sm text-zinc-800" for="{{ form.password.html_id }}">Password</label>
+    <input
+        class="border rounded-md text-lg px-2 py-1 mt-1"
+        type="password"
+        name="{{ form.password.html_name }}"
+        id="{{ form.password.html_id }}"
+        autcomplete="new-password"
+        required>
+    {% if form.password.errors %}
+    <div class="text-red-500 mt-1 text-sm">{{ form.password.errors|join(', ') }}</div>
+    {% endif %}
+
+    <br>
+
+    <label class="text-sm text-zinc-800" for="{{ form.confirm_password.html_id }}">Confirm password</label>
+    <input
+        class="border rounded-md text-lg px-2 py-1 mt-1"
+        type="password"
+        name="{{ form.confirm_password.html_name }}"
+        id="{{ form.confirm_password.html_id }}"
+        autcomplete="new-password"
+        required>
+
+    <button class="bg-black hover:bg-black/80 rounded-md text-white mt-6 px-4 py-2 text-center" type="submit">Sign up</button>
+
+    <div class="mt-6 text-center">
+        <a href="{{ url('login') }}" class="text-center text-sm text-zinc-500 hover:underline">Log in with an existing account →</a>
+    </div>
+</form>
+
+{% endblock %}

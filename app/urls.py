@@ -1,28 +1,13 @@
-from bolt.urls import path
-from bolt.views import TemplateView, View
-
-
-class ExampleTemplateView(TemplateView):
-    template_name = "example.html"
-
-    def get_template_context(self):
-        context = super().get_template_context()
-        context["message"] = "Hello World!"
-        return context
-
-
-class ExampleJsonView(View):
-    def get(self):
-        return {"message": "Hello World!"}
-
-
-class ExamplePlaintextView(View):
-    def get(self):
-        return "Hello World!"
-
+import bolt.admin.urls
+import views
+from bolt.auth.views import LogoutView
+from bolt.urls import include, path
 
 urlpatterns = [
-    path("json/", ExampleJsonView.as_view()),
-    path("text/", ExamplePlaintextView.as_view()),
-    path("", ExampleTemplateView.as_view()),
+    path("admin/", include(bolt.admin.urls)),
+    path("logout/", LogoutView, name="logout"),
+    path("login/", views.LoginView, name="login"),
+    path("public/", views.ExamplePublicView),
+    path("signup/", views.SignupView, name="signup"),
+    path("", views.ExamplePrivateView),
 ]
