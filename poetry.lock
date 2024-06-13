@@ -19,7 +19,7 @@ python-dotenv = "^1.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt"
 
 [[package]]
@@ -35,7 +35,7 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-auth"
 
 [[package]]
@@ -54,7 +54,7 @@ ruff = "^0.1.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-code"
 
 [[package]]
@@ -73,7 +73,7 @@ sqlparse = ">=0.3.1"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-db"
 
 [[package]]
@@ -97,8 +97,24 @@ requests = ">=2.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-dev"
+
+[[package]]
+name = "bolt-elements"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = "^3.8"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/dropseed/bolt"
+reference = "main"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
+subdirectory = "bolt-elements"
 
 [[package]]
 name = "bolt-htmx"
@@ -113,7 +129,7 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-htmx"
 
 [[package]]
@@ -129,7 +145,7 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-passwords"
 
 [[package]]
@@ -149,7 +165,7 @@ pytest = "^7.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-pytest"
 
 [[package]]
@@ -165,7 +181,7 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-sessions"
 
 [[package]]
@@ -184,7 +200,7 @@ sqlparse = ">=0.2.2"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-staff"
 
 [[package]]
@@ -205,7 +221,7 @@ tomlkit = "^0.12.1"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "a906cc2ed14ed2c69ccb360b45abe1c6ed5d1a8f"
+resolved_reference = "56c97265b39a85a37588424d7ad763c688b9f32d"
 subdirectory = "bolt-tailwind"
 
 [[package]]
@@ -871,4 +887,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "70a461c21d3739a72e7dcac2b13fe77e09d5f99cd1fd01dcd9414faef91a2b8f"
+content-hash = "e862b453ee910708f4cd266904f134fdbbf27b51a6295da2e9e47dfb8494f21c"

@@ -1,6 +1,9 @@
 # Bolt temporary files
 /.bolt
 
+# Compiled assets
+/app/assets/dist
+
 # Python files
 __pycache__
 
@@ -10,4 +13,3 @@ __pycache__
 # env files
 /.env*
 !/.env.example
-!/.env*.encrypted

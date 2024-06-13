@@ -4,25 +4,25 @@
 <div class="mt-20 flex flex-col items-center">
     <h1 class="text-5xl text-center tracking-tight">{{ message }}</h1>
 
-    <img src="{{ asset('bolthead.svg') }}" class="animate-[spin_120s_linear_infinite] mt-6 max-h-32" alt="">
+    <img src="{{ asset('bolthead.svg') }}" class="animate-[spin_30s_linear_infinite] mt-6 max-h-32" alt="">
 
     {% if request.user %}
-    <div class="flex items-center mt-8">
-        <img src="{{ request.user.get_avatar_url() }}" alt="" class="rounded-md w-14 h-14 mr-2">
+    <div class="flex items-center mt-8 bg-black/10 rounded-full p-2 pr-8">
+        <img src="{{ request.user.get_avatar_url() }}" alt="" class="rounded-full w-14 h-14 mr-2 ring-1 ring-black/10">
         <div>
             {{ request.user }}
             <form action="{{ url('logout') }}" method="post">
                 {{ csrf_input }}
-                <button type="submit">Log out</button>
+                <button class="text-sm hover:underline" type="submit">Log out</button>
             </form>
         </div>
     </div>
     {% endif %}
 
-    <div>
-        <p class="mt-8 text-center">You are running Bolt {{ bolt_version }} on Python {{ python_version }}</p>
-        <p class="mt-2 text-center">Read the <a href="https://docs.bolt.cm">documentation</a> or <a href="{{ url('admin:index') }}">go to the admin</a> (make yourself staff first)</p>
-        <p>Run <code>bolt create name</code>?</p>
+    <div class="text-center space-y-2 mt-8">
+        <p>You are running Bolt {{ bolt_version }} on Python {{ python_version }}.</p>
+        <p>Read the <a class="text-blue-600 hover:underline" href="https://boltpython.com/docs/">documentation</a> or <a class="text-blue-600 hover:underline" href="{{ url('admin:index') }}">go to the admin</a> (make yourself staff first)</p>
+        <p>Create a new local package with <code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">bolt create name</code></p>
     </div>
 </div>
 

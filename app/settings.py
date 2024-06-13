@@ -1,4 +1,5 @@
 INSTALLED_PACKAGES = [
+    # Bolt packages installed
     "bolt.db",
     "bolt.tailwind",
     "bolt.auth",
@@ -9,6 +10,7 @@ INSTALLED_PACKAGES = [
     "bolt.toolbar",
     "bolt.impersonate",
     "bolt.querystats",
+    # Local packages
     "users",
 ]
 
@@ -23,3 +25,5 @@ MIDDLEWARE = [
     "bolt.auth.middleware.AuthenticationMiddleware",
     "bolt.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+JINJA_LOADER = "bolt.elements.ElementsLoader"

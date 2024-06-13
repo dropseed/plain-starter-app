@@ -16,6 +16,7 @@ bolt-sessions = {git = "https://github.com/dropseed/bolt", branch = "main", subd
 bolt-staff = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-staff"}
 bolt-tailwind = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-tailwind"}
 bolt-htmx = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-htmx"}
+bolt-elements = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-elements"}
 
 [tool.poetry.group.dev.dependencies]
 bolt-dev = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-dev"}

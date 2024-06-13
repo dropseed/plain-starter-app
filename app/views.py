@@ -1,11 +1,15 @@
 import sys
 
 from bolt.auth.views import AuthViewMixin
+from bolt.http import FileResponse
 from bolt.passwords.views import PasswordLoginView, PasswordSignupView
+from bolt.runtime import APP_PATH
 from bolt.utils.version import get_version
-from bolt.views import TemplateView
+from bolt.views import TemplateView, View
 
 
+# An example of a base mixin that can be used on almost all app views,
+# to require login, set HTML title, and share other common functionality.
 class BaseViewMixin(AuthViewMixin):
     html_title = ""
 
@@ -19,8 +23,15 @@ class BaseViewMixin(AuthViewMixin):
         return self.html_title
 
 
-class ExamplePrivateView(BaseViewMixin, TemplateView):
+class FaviconView(View):
+    def get(self):
+        favicon_path = APP_PATH / "assets" / "favicon.ico"
+        return FileResponse(favicon_path.open("rb"), content_type="image/x-icon")
+
+
+class HomeView(BaseViewMixin, TemplateView):
     template_name = "home.html"
+    html_title = "Home"
 
     def get_template_context(self):
         context = super().get_template_context()
@@ -30,16 +41,17 @@ class ExamplePrivateView(BaseViewMixin, TemplateView):
         return context
 
 
-class ExamplePublicView(ExamplePrivateView):
+class ExamplePublicView(HomeView):
     login_required = False
+    html_title = "Public"
 
 
 class LoginView(BaseViewMixin, PasswordLoginView):
     login_required = False
-    html_title = "Login"
+    html_title = "Log in"
 
 
 class SignupView(BaseViewMixin, PasswordSignupView):
     template_name = "signup.html"
-    html_title = "Sign Up"
+    html_title = "Sign up"
     login_required = False
