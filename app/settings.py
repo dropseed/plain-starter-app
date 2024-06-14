@@ -15,6 +15,7 @@ INSTALLED_PACKAGES = [
 ]
 
 AUTH_USER_MODEL = "users.User"
+AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [
     "bolt.middleware.security.SecurityMiddleware",
