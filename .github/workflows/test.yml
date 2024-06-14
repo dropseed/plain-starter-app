@@ -23,7 +23,9 @@ jobs:
       with:
         python-version: "3.11"  # Set to your Python version
         cache: poetry
-    - run: poetry install
+    - run: |
+        poetry config installer.parallel false  # Avoid race condition in git repo cloning
+        poetry install
     - run: poetry run bolt test
       env:
         BOLT_DEBUG: true
