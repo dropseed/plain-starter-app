@@ -47,6 +47,7 @@ class ExamplePublicView(HomeView):
 
 
 class LoginView(BaseViewMixin, PasswordLoginView):
+    template_name = "login.html"
     login_required = False
     html_title = "Log in"
 
