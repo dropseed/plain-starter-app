@@ -6,7 +6,7 @@
     "customizations": {
         "codespaces": {
             "openFiles": [
-                "app/templates/example.html",
+                "app/templates/login.html",
                 "app/urls.py"
             ]
         }
