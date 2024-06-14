@@ -1,7 +1,7 @@
 {
     "onCreateCommand": "pipx install poetry",
     "updateContentCommand": "./scripts/install",
-    "postCreateCommand": "",
+    "postCreateCommand": "export PATH=$PATH:.venv/bin",
     "postAttachCommand": "poetry run bolt dev",
     "customizations": {
         "codespaces": {

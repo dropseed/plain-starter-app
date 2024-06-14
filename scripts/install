@@ -2,7 +2,8 @@
 
 echo "Installing dependencies with poetry"
 poetry config installer.parallel false  # Avoid race condition in git repo cloning
-POETRY_VIRTUALENV_IN_PROJECT=true poetry install
+poetry config virtualenvs.in-project true
+poetry install
 
 echo "Installing bolt pre-commit hooks"
 poetry run bolt pre-commit --install
