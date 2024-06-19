@@ -1,5 +1,10 @@
 #!/bin/sh -e
 
+if [ ! -f .env ]; then
+    echo "Copying .env.example to .env"
+    cp .env.example .env
+fi
+
 echo "Installing dependencies with poetry"
 poetry config installer.parallel false  # Avoid race condition in git repo cloning
 poetry config virtualenvs.in-project true
@@ -7,8 +12,3 @@ poetry install
 
 echo "Installing bolt pre-commit hooks"
 poetry run bolt pre-commit --install
-
-if [ ! -f .env ]; then
-    echo "Copying .env.example to .env"
-    cp .env.example .env
-fi
