@@ -3,7 +3,7 @@
 # bolt-starter-app
 
 This is the app starter kit for [Bolt](https://boltframework.dev/),
-which includes everything you need to a database-driven app with users.
+which includes everything you need for a database-driven app with users.
 
 ## Usage
 
