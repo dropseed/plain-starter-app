@@ -1,5 +1,4 @@
 INSTALLED_PACKAGES = [
-    # Bolt packages
     "bolt.db",
     "bolt.tailwind",
     "bolt.auth",
