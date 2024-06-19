@@ -1,9 +1,9 @@
-<img src="https://boltpython.com/assets/img/bolthead.svg" width="30" height="30">
+<img src="https://boltframework.dev/assets/img/bolthead.svg" width="30" height="30">
 
 # bolt-starter-app
 
-This is the bare starter kit for [Bolt](https://boltpython.com/),
-which includes [`bolt`](https://boltpython.com/docs/bolt) itself and [`bolt-dev`](https://boltpython.com/docs/bolt-dev) for easier development.
+This is the bare starter kit for [Bolt](https://boltframework.dev/),
+which includes [`bolt`](https://boltframework.dev/docs/bolt) itself and [`bolt-dev`](https://boltframework.dev/docs/bolt-dev) for easier development.
 
 ## Usage
 
