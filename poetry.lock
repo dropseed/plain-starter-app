@@ -2,7 +2,7 @@
 
 [[package]]
 name = "bolt"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -18,12 +18,12 @@ python-dotenv = "^1.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt"
 
 [[package]]
 name = "bolt-auth"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -34,12 +34,12 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-auth"
 
 [[package]]
 name = "bolt-code"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.8"
@@ -53,12 +53,12 @@ ruff = "^0.1.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-code"
 
 [[package]]
 name = "bolt-db"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -72,12 +72,12 @@ sqlparse = ">=0.3.1"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-db"
 
 [[package]]
 name = "bolt-dev"
-version = "0.1.0"
+version = "0.0.0"
 description = "Work library for Bolt"
 optional = false
 python-versions = "^3.8"
@@ -96,12 +96,12 @@ requests = ">=2.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-dev"
 
 [[package]]
 name = "bolt-elements"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.8"
@@ -112,12 +112,12 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-elements"
 
 [[package]]
 name = "bolt-htmx"
-version = "0.1.0"
+version = "0.0.0"
 description = "HTMX integration for Bolt"
 optional = false
 python-versions = "^3.8"
@@ -128,12 +128,12 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-htmx"
 
 [[package]]
 name = "bolt-passwords"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -144,12 +144,12 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-passwords"
 
 [[package]]
 name = "bolt-pytest"
-version = "0.1.0"
+version = "0.0.0"
 description = "Testing for Bolt"
 optional = false
 python-versions = "^3.8"
@@ -164,12 +164,12 @@ pytest = "^7.0.0"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-pytest"
 
 [[package]]
 name = "bolt-sessions"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -180,12 +180,12 @@ develop = false
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-sessions"
 
 [[package]]
 name = "bolt-staff"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 optional = false
 python-versions = "^3.8"
@@ -199,12 +199,12 @@ sqlparse = ">=0.2.2"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-staff"
 
 [[package]]
 name = "bolt-tailwind"
-version = "0.1.0"
+version = "0.0.0"
 description = "Work library for Bolt"
 optional = false
 python-versions = "^3.8"
@@ -220,7 +220,7 @@ tomlkit = "^0.12.1"
 type = "git"
 url = "https://github.com/dropseed/bolt"
 reference = "main"
-resolved_reference = "d9ac07a90810d0014f12ea5aabee1f405bf956c0"
+resolved_reference = "568576ec178042050c256f702d8ed5ef2a622ce5"
 subdirectory = "bolt-tailwind"
 
 [[package]]
