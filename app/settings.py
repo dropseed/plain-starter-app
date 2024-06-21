@@ -4,11 +4,11 @@ INSTALLED_PACKAGES = [
     "bolt.auth",
     "bolt.passwords",
     "bolt.sessions",
-    "bolt.admin",
     "bolt.htmx",
-    "bolt.toolbar",
-    "bolt.impersonate",
-    "bolt.querystats",
+    "bolt.staff.admin",
+    "bolt.staff.toolbar",
+    "bolt.staff.impersonate",
+    "bolt.staff.querystats",
     # Local packages
     "users",
 ]

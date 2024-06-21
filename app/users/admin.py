@@ -1,11 +1,11 @@
-from bolt.admin.views import (
+from bolt.db.forms import ModelForm
+from bolt.staff.admin.views import (
     AdminModelDetailView,
     AdminModelListView,
     AdminModelUpdateView,
     AdminModelViewset,
     register_viewset,
 )
-from bolt.db.forms import ModelForm
 
 from .models import User
 
