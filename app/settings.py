@@ -24,6 +24,7 @@ MIDDLEWARE = [
     "bolt.csrf.middleware.CsrfViewMiddleware",
     "bolt.auth.middleware.AuthenticationMiddleware",
     "bolt.middleware.clickjacking.XFrameOptionsMiddleware",
+    "bolt.staff.querystats.QueryStatsMiddleware",
 ]
 
 JINJA_LOADER = "bolt.elements.ElementsLoader"
