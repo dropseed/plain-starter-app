@@ -27,9 +27,9 @@ jobs:
         poetry config installer.parallel false  # Avoid race condition in git repo cloning
         poetry install
     - run: |
-        poetry run bolt compile
-        poetry run bolt test
+        poetry run plain compile
+        poetry run plain test
       env:
-        BOLT_DEBUG: true
-        BOLT_SECRET_KEY: testing
+        PLAIN_DEBUG: true
+        PLAIN_SECRET_KEY: testing
         DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres

@@ -1,5 +1,5 @@
-from bolt.db.forms import ModelForm
-from bolt.staff.admin.views import (
+from plain.models.forms import ModelForm
+from plain.staff.admin.views import (
     AdminModelDetailView,
     AdminModelListView,
     AdminModelUpdateView,

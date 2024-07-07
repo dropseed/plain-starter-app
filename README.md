@@ -1,8 +1,6 @@
-<img src="https://boltframework.dev/assets/bolthead.svg" width="30" height="30">
+# plain-starter-app
 
-# bolt-starter-app
-
-This is the app starter kit for [Bolt](https://boltframework.dev/),
+This is the app starter kit for [Plain](https://plainframework.com/),
 which includes everything you need for a database-driven app with users.
 
 ## Usage
@@ -10,7 +8,7 @@ which includes everything you need for a database-driven app with users.
 Make your own copy of this repo by cloning it and starting fresh:
 
 ```bash
-git clone --depth 1 https://github.com/dropseed/bolt-starter-app new-project
+git clone --depth 1 https://github.com/dropseed/plain-starter-app new-project
 cd new-project
 rm -rf .git
 git init
@@ -25,5 +23,5 @@ Then, install the dependencies (note that you'll need [Poetry](https://python-po
 Now you can fire up the development server and open http://localhost:8000 in your browser:
 
 ```bash
-bolt dev
+plain dev
 ```

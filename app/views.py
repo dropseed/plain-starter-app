@@ -1,11 +1,11 @@
 import sys
 
-from bolt.auth.views import AuthViewMixin
-from bolt.http import FileResponse
-from bolt.passwords.views import PasswordLoginView, PasswordSignupView
-from bolt.runtime import APP_PATH
-from bolt.utils.version import get_version
-from bolt.views import TemplateView, View
+from plain.auth.views import AuthViewMixin
+from plain.http import FileResponse
+from plain.passwords.views import PasswordLoginView, PasswordSignupView
+from plain.runtime import APP_PATH
+from plain.utils.version import get_version
+from plain.views import TemplateView, View
 
 
 # An example of a base mixin that can be used on almost all app views,
@@ -35,8 +35,8 @@ class HomeView(BaseViewMixin, TemplateView):
 
     def get_template_context(self):
         context = super().get_template_context()
-        context["message"] = "Welcome to Bolt!"
-        context["bolt_version"] = get_version()
+        context["message"] = "Welcome to Plain!"
+        context["plain_version"] = get_version()
         context["python_version"] = ".".join(map(str, sys.version_info[:3]))
         return context
 

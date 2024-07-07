@@ -4,7 +4,7 @@
 <div class="mt-20 flex flex-col items-center">
     <h1 class="text-5xl text-center tracking-tight">{{ message }}</h1>
 
-    <img src="{{ asset('bolthead.svg') }}" class="animate-[spin_30s_linear_infinite] mt-6 max-h-32" alt="">
+    <img src="{{ asset('plainhead.svg') }}" class="animate-[spin_30s_linear_infinite] mt-6 max-h-32" alt="">
 
     {% if request.user %}
     <div class="flex items-center mt-8 bg-black/10 rounded-full p-2 pr-8">
@@ -20,9 +20,9 @@
     {% endif %}
 
     <div class="text-center space-y-2 mt-8">
-        <p>You are running Bolt {{ bolt_version }} on Python {{ python_version }}.</p>
-        <p>Read the <a class="text-blue-600 hover:underline" href="https://boltframework.dev/docs/">documentation</a> or <a class="text-blue-600 hover:underline" href="{{ url('admin:index') }}">go to the admin</a> (make yourself staff first)</p>
-        <p>Create a new local package with <code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">bolt create name</code></p>
+        <p>You are running Plain {{ plain_version }} on Python {{ python_version }}.</p>
+        <p>Read the <a class="text-blue-600 hover:underline" href="https://plainframework.com/docs/">documentation</a> or <a class="text-blue-600 hover:underline" href="{{ url('admin:index') }}">go to the admin</a> (make yourself staff first)</p>
+        <p>Create a new local package with <code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain create name</code></p>
     </div>
 </div>
 

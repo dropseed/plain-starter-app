@@ -1,5 +1,5 @@
-# Bolt temporary files
-/.bolt
+# Plain temporary files
+/.plain
 
 # Compiled assets
 /app/assets/dist

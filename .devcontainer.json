@@ -2,7 +2,7 @@
     "onCreateCommand": "pipx install poetry",
     "updateContentCommand": "./scripts/install",
     "postCreateCommand": "export PATH=$PATH:.venv/bin",
-    "postAttachCommand": "poetry run bolt dev",
+    "postAttachCommand": "poetry run plain dev",
     "customizations": {
         "codespaces": {
             "openFiles": [
@@ -13,7 +13,7 @@
     },
     "portsAttributes": {
         "8000": {
-            "label": "Bolt Dev",
+            "label": "Plain Dev",
             "onAutoForward": "openBrowserOnce"
         }
     },

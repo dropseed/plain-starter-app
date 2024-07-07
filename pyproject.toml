@@ -7,25 +7,25 @@ authors = ["Your Name <you@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.11"
 psycopg2-binary = "^2.9.9"
-bolt = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt"}
-bolt-db = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-db"}
-bolt-auth = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-auth"}
-bolt-code = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-code"}
-bolt-passwords = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-passwords"}
-bolt-pytest = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-pytest"}
-bolt-sessions = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-sessions"}
-bolt-staff = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-staff"}
-bolt-tailwind = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-tailwind"}
-bolt-htmx = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-htmx"}
-bolt-elements = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-elements"}
+plainframework = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain"}
+"plain.models" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-models"}
+"plain.auth" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-auth"}
+"plain.code" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-code"}
+"plain.passwords" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-passwords"}
+"plain.pytest" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-pytest"}
+"plain.sessions" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-sessions"}
+"plain.staff" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-staff"}
+"plain.tailwind" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-tailwind"}
+"plain.htmx" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-htmx"}
+"plain.elements" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-elements"}
 
 [tool.poetry.group.dev.dependencies]
-bolt-dev = {git = "https://github.com/dropseed/bolt", branch = "main", subdirectory = "bolt-dev"}
+"plain.dev" = {git = "https://github.com/dropseed/plain", branch = "main", subdirectory = "plain-dev"}
 
-[tool.bolt.dev.services]
-postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.bolt/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
+[tool.plain.dev.services]
+postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
 
-[tool.bolt.tailwind]
+[tool.plain.tailwind]
 version = "3.4.4"
 
 [build-system]

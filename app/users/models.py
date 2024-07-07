@@ -1,7 +1,7 @@
 import hashlib
 
-from bolt.db import models
-from bolt.passwords.models import PasswordField
+from plain import models
+from plain.passwords.models import PasswordField
 
 
 class User(models.Model):
