@@ -3,8 +3,7 @@ import sys
 from plain.auth.views import AuthViewMixin
 from plain.http import FileResponse
 from plain.passwords.views import PasswordLoginView, PasswordSignupView
-from plain.runtime import APP_PATH
-from plain.utils.version import get_version
+from plain.runtime import APP_PATH, __version__
 from plain.views import TemplateView, View
 
 
@@ -36,7 +35,7 @@ class HomeView(BaseViewMixin, TemplateView):
     def get_template_context(self):
         context = super().get_template_context()
         context["message"] = "Welcome to Plain!"
-        context["plain_version"] = get_version()
+        context["plain_version"] = __version__
         context["python_version"] = ".".join(map(str, sys.version_info[:3]))
         return context
 

@@ -328,223 +328,163 @@ name = "plain-auth"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.11"
-files = []
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-auth"
+python-versions = "<4.0,>=3.11"
+files = [
+    {file = "plain_auth-0.0.0-py3-none-any.whl", hash = "sha256:e4aa9e4c16d5dccdd0751ed0e1eba774b009cf8de07c43bf7577bd8d2cd7e5f6"},
+    {file = "plain_auth-0.0.0.tar.gz", hash = "sha256:0cc53180fb53f774362c5b2d16957e64b782b05721d8c51186374cf4d293a3c3"},
+]
 
 [[package]]
 name = "plain-code"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_code-0.0.0-py3-none-any.whl", hash = "sha256:1bc1d3470e10c9e871a75523a37867343beee5cb0233a4ea49f8fc92b7835e51"},
+    {file = "plain_code-0.0.0.tar.gz", hash = "sha256:be4970171dbb4ae5dcc980d2b1939e3546afd69f262b6d0089ac763818b9ed1e"},
+]
 
 [package.dependencies]
-ruff = "^0.1.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-code"
+ruff = ">=0.1.0,<0.2.0"
 
 [[package]]
 name = "plain-dev"
-version = "0.0.0"
+version = "0.0.1"
 description = "Work library for Plain"
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_dev-0.0.1-py3-none-any.whl", hash = "sha256:9b58804f829e36e0ad02b948db4800d29603177c6e60d52a5e30d2dc399aa855"},
+    {file = "plain_dev-0.0.1.tar.gz", hash = "sha256:c5103d67c6afa8053f3bfe4c65ae56632bff5bc336700127676c32155eed7db4"},
+]
 
 [package.dependencies]
 click = ">=8.0.0"
-debugpy = "^1.6.3"
+debugpy = ">=1.6.3,<2.0.0"
 gunicorn = ">20"
-honcho = "^1.1.0"
-psycopg2-binary = "^2.9.3"
+honcho = ">=1.1.0,<2.0.0"
+psycopg2-binary = ">=2.9.3,<3.0.0"
 requests = ">=2.0.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-dev"
 
 [[package]]
 name = "plain-elements"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-elements"
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_elements-0.0.0-py3-none-any.whl", hash = "sha256:8e169d808b446fcfab1766e1446afaeb639c7b4bb16302576d22a6ec97944e7d"},
+    {file = "plain_elements-0.0.0.tar.gz", hash = "sha256:9e2bed5025f95f18cfadedfc80703dd2454e3b09aa7df2465302e37eb44ca65b"},
+]
 
 [[package]]
 name = "plain-htmx"
 version = "0.0.0"
 description = "HTMX integration for Plain"
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-htmx"
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_htmx-0.0.0-py3-none-any.whl", hash = "sha256:a4909c2f56efaba66b270654b1f9da433c204731d9450533270a09fd4fe32e34"},
+    {file = "plain_htmx-0.0.0.tar.gz", hash = "sha256:c7b98675283101f64571d4891ad4c21e3c7a014bbdea303a1545124fe31ab46b"},
+]
 
 [[package]]
 name = "plain-models"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.11"
-files = []
-develop = false
+python-versions = "<4.0,>=3.11"
+files = [
+    {file = "plain_models-0.0.0-py3-none-any.whl", hash = "sha256:dc67dd55cb4ed814fc1179a9256830b96cb238eaae7d6a896ed85150c46ca791"},
+    {file = "plain_models-0.0.0.tar.gz", hash = "sha256:052d842f25762578b1a39d995f53ca029d0bd0ef6bd11d8cb1140584d90a5e3f"},
+]
 
 [package.dependencies]
 sqlparse = ">=0.3.1"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-models"
 
 [[package]]
 name = "plain-passwords"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.11"
-files = []
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-passwords"
+python-versions = "<4.0,>=3.11"
+files = [
+    {file = "plain_passwords-0.0.0-py3-none-any.whl", hash = "sha256:62b848cffa75106f54fc4c2af533a454f809e4430a807b4a3656cbbd7bbeabcf"},
+    {file = "plain_passwords-0.0.0.tar.gz", hash = "sha256:cdde623e3982353ba48f61b4564460463ef9384f321baef73c5f2690c02059e1"},
+]
 
 [[package]]
 name = "plain-pytest"
 version = "0.0.0"
 description = "Testing for Plain"
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_pytest-0.0.0-py3-none-any.whl", hash = "sha256:70cdab86f3b6f89f2b86ef9f756f750eb3770dca8ae0b3acf3877179b35090f8"},
+    {file = "plain_pytest-0.0.0.tar.gz", hash = "sha256:35e61d747d4a832482edfba52c036f80bffaee33c4953996ceaba8f591a1742c"},
+]
 
 [package.dependencies]
 click = ">=8.0.0"
-pytest = "^7.0.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-pytest"
+pytest = ">=7.0.0,<8.0.0"
 
 [[package]]
 name = "plain-sessions"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.11"
-files = []
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-sessions"
+python-versions = "<4.0,>=3.11"
+files = [
+    {file = "plain_sessions-0.0.0-py3-none-any.whl", hash = "sha256:fe818f8b17c083423ef9c830134ec938fa4defbfc4fd88441729a829682fe9cd"},
+    {file = "plain_sessions-0.0.0.tar.gz", hash = "sha256:869f95106d6a9b04dd418827ef17ef85d46ea8019e3ad73080b3496ff8416522"},
+]
 
 [[package]]
 name = "plain-staff"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_staff-0.0.0-py3-none-any.whl", hash = "sha256:a80818acfbe92cf4712c3b04178e02193ab82e0db2ea2da5c9c9ead1fbbc4dbd"},
+    {file = "plain_staff-0.0.0.tar.gz", hash = "sha256:1690955a96e6083ab654baa5c399cfee1da028ef1e519a459408ee6dbef408c6"},
+]
 
 [package.dependencies]
 sqlparse = ">=0.2.2"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-staff"
 
 [[package]]
 name = "plain-tailwind"
 version = "0.0.0"
 description = "Work library for Plain"
 optional = false
-python-versions = "^3.8"
-files = []
-develop = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "plain_tailwind-0.0.0-py3-none-any.whl", hash = "sha256:84d891c874a51cc60fccd3c0aedcb5fd264f7c646ffb3ee8bf04f6830f481e4c"},
+    {file = "plain_tailwind-0.0.0.tar.gz", hash = "sha256:3b47b5e82d69c6ce6bb685e39b72890a24797642dafa41d3ec657b3233d2346f"},
+]
 
 [package.dependencies]
 click = ">=8.0.0"
 requests = ">=2.0.0"
-tomlkit = "^0.12.1"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain-tailwind"
+tomlkit = ">=0.12.1,<0.13.0"
 
 [[package]]
 name = "plainframework"
 version = "0.0.0"
 description = ""
 optional = false
-python-versions = "^3.11"
-files = []
-develop = false
+python-versions = "<4.0,>=3.11"
+files = [
+    {file = "plainframework-0.0.0-py3-none-any.whl", hash = "sha256:d1ccbc87a7992a27e1d360455bfcf5d97dc049f3cd176935abe60a2baf836e09"},
+    {file = "plainframework-0.0.0.tar.gz", hash = "sha256:e1b2b62690a7bd5e661c3438467df4f03610d355f5d9e1c928a955fe8a504cbf"},
+]
 
 [package.dependencies]
 click = ">=8.0.0"
-jinja2 = "^3.1.2"
-python-dotenv = "^1.0.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dropseed/plain"
-reference = "main"
-resolved_reference = "8ac110b6fcfafd83cd683e112276f685cce62445"
-subdirectory = "plain"
+jinja2 = ">=3.1.2,<4.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"
 
 [[package]]
 name = "pluggy"
@@ -766,4 +706,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f6bc1b216c0ac47a7d9b109b26b2cb488cfa90c2d3ddd8243454fa9dd0072a6f"
+content-hash = "f208a92f13f834b2f9171cffaff5d151191945e623d4bb5ba03565572c83c0aa"
