@@ -12,7 +12,6 @@ plainframework = "<1.0.0"
 "plain.auth" = "<1.0.0"
 "plain.code" = "<1.0.0"
 "plain.passwords" = "<1.0.0"
-"plain.pytest" = "<1.0.0"
 "plain.sessions" = "<1.0.0"
 "plain.staff" = "<1.0.0"
 "plain.tailwind" = "<1.0.0"
@@ -21,6 +20,7 @@ plainframework = "<1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 "plain.dev" = "<1.0.0"
+"plain.pytest" = "<1.0.0"
 
 [tool.plain.dev.services]
 postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}

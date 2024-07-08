@@ -416,13 +416,13 @@ files = [
 
 [[package]]
 name = "plain-pytest"
-version = "0.0.0"
+version = "0.0.2"
 description = "Testing for Plain"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "plain_pytest-0.0.0-py3-none-any.whl", hash = "sha256:70cdab86f3b6f89f2b86ef9f756f750eb3770dca8ae0b3acf3877179b35090f8"},
-    {file = "plain_pytest-0.0.0.tar.gz", hash = "sha256:35e61d747d4a832482edfba52c036f80bffaee33c4953996ceaba8f591a1742c"},
+    {file = "plain_pytest-0.0.2-py3-none-any.whl", hash = "sha256:52e6f5e6e8d95aa3bb59c0582d24fdb1abc6d0cae6947b573d41c06c4b84a97e"},
+    {file = "plain_pytest-0.0.2.tar.gz", hash = "sha256:48b95966675de14cc0c554c021af3be6d4fd7f965b91a12a1968fc58607cb3e1"},
 ]
 
 [package.dependencies]
@@ -706,4 +706,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f208a92f13f834b2f9171cffaff5d151191945e623d4bb5ba03565572c83c0aa"
+content-hash = "4e4e7f621b66eefa3400a908114f97c5a7de1aa4fda95e698af12c576a7db27a"
