@@ -4,7 +4,6 @@ from plain.auth.views import LogoutView
 from plain.urls import include, path
 
 urlpatterns = [
-    path("favicon.ico", views.FaviconView),
     path("admin/", include(plain.staff.admin.urls)),
     path("logout/", LogoutView, name="logout"),
     path("login/", views.LoginView, name="login"),

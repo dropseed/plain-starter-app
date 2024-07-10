@@ -1,10 +1,9 @@
 import sys
 
 from plain.auth.views import AuthViewMixin
-from plain.http import FileResponse
 from plain.passwords.views import PasswordLoginView, PasswordSignupView
-from plain.runtime import APP_PATH, __version__
-from plain.views import TemplateView, View
+from plain.runtime import __version__
+from plain.views import TemplateView
 
 
 # An example of a base mixin that can be used on almost all app views,
@@ -20,12 +19,6 @@ class BaseViewMixin(AuthViewMixin):
     def get_html_title(self):
         """Override this method to set the HTML title dynamically."""
         return self.html_title
-
-
-class FaviconView(View):
-    def get(self):
-        favicon_path = APP_PATH / "assets" / "favicon.ico"
-        return FileResponse(favicon_path.open("rb"), content_type="image/x-icon")
 
 
 class HomeView(BaseViewMixin, TemplateView):
