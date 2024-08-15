@@ -1,14 +1,23 @@
 import hashlib
 
 from plain import models
+from plain.models.functions import Lower
 from plain.passwords.models import PasswordField
 
 
 class User(models.Model):
-    email = models.EmailField(unique=True)
+    email = models.EmailField()
     password = PasswordField()
     is_staff = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                Lower("email"),
+                name="unique_lower_email",
+            ),
+        ]
 
     def __str__(self):
         return self.email

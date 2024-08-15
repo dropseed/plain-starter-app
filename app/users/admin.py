@@ -1,9 +1,9 @@
 from plain.models.forms import ModelForm
-from plain.staff.admin.views import (
-    AdminModelDetailView,
-    AdminModelListView,
-    AdminModelUpdateView,
-    AdminModelViewset,
+from plain.staff.views import (
+    StaffModelDetailView,
+    StaffModelListView,
+    StaffModelUpdateView,
+    StaffModelViewset,
     register_viewset,
 )
 
@@ -17,8 +17,8 @@ class UserForm(ModelForm):
 
 
 @register_viewset
-class UserAdmin(AdminModelViewset):
-    class ListView(AdminModelListView):
+class UserStaff(StaffModelViewset):
+    class ListView(StaffModelListView):
         model = User
         fields = [
             "id",
@@ -31,9 +31,9 @@ class UserAdmin(AdminModelViewset):
             "email",
         ]
 
-    class DetailView(AdminModelDetailView):
+    class DetailView(StaffModelDetailView):
         model = User
 
-    class UpdateView(AdminModelUpdateView):
+    class UpdateView(StaffModelUpdateView):
         model = User
         form_class = UserForm
