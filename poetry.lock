@@ -325,13 +325,13 @@ files = [
 
 [[package]]
 name = "plain"
-version = "0.3.0"
+version = "0.3.1"
 description = "A web framework for building products with Python."
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "plain-0.3.0-py3-none-any.whl", hash = "sha256:df569c3fbb883593b389ec2a036a1e9af51f2caeb24006b4f038a0df38c46b6b"},
-    {file = "plain-0.3.0.tar.gz", hash = "sha256:e466f26a5ccc9c4bc36ad938076d15fc0f2a854ff534b2342b852e5d5808e132"},
+    {file = "plain-0.3.1-py3-none-any.whl", hash = "sha256:06d943aa237f2d4e62982ad9d6c6f4dd2cf5d725c29460b19c0a52a628a83236"},
+    {file = "plain-0.3.1.tar.gz", hash = "sha256:50907b522173d45131c50ea30c1025dca74111fa851f48a5fb0608df8e2c7050"},
 ]
 
 [package.dependencies]
@@ -420,13 +420,13 @@ plain = "<1.0.0"
 
 [[package]]
 name = "plain-models"
-version = "0.2.0"
+version = "0.3.0"
 description = "Database models for Plain."
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "plain_models-0.2.0-py3-none-any.whl", hash = "sha256:f41cb22ed0de624941075144b94715f1e2973023282330bd65d14f50618a689f"},
-    {file = "plain_models-0.2.0.tar.gz", hash = "sha256:6c35b1259e3862dc823e0cbe22f6dce4738ffb57d0d36354db8789ec04b2fab4"},
+    {file = "plain_models-0.3.0-py3-none-any.whl", hash = "sha256:f89a1db7854899ab7a08852507960b7d528630d1cfb1b37d3e4a10e2122774d9"},
+    {file = "plain_models-0.3.0.tar.gz", hash = "sha256:b542ed6eec467285bfda863c019c364fbc472df9a1dafaf3fedb9b83669816a1"},
 ]
 
 [package.dependencies]
@@ -465,13 +465,13 @@ pytest = ">=7.0.0"
 
 [[package]]
 name = "plain-sessions"
-version = "0.3.0"
+version = "0.4.0"
 description = "Session management for Plain."
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "plain_sessions-0.3.0-py3-none-any.whl", hash = "sha256:0c43042681a4d3866d1a8f6bcea66517fb01c7ac8aeb857e9031c2227f8ce921"},
-    {file = "plain_sessions-0.3.0.tar.gz", hash = "sha256:cf3246cd4be7783a9ff7a8ad8a684b0d6a201daf037b7272800203c27f0ae61c"},
+    {file = "plain_sessions-0.4.0-py3-none-any.whl", hash = "sha256:98f58dd814c83c1ee3a6bd945b88c261dc4753fe16b058c4cae5a4019d422337"},
+    {file = "plain_sessions-0.4.0.tar.gz", hash = "sha256:b4ff1d2a75b4f31c35471baff677a1f9b5f7dbeff7061098761f27deb2613d69"},
 ]
 
 [package.dependencies]
