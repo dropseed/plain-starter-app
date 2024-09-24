@@ -18,15 +18,13 @@ jobs:
     steps:
     - run: sudo apt update && sudo apt install libpq-dev
     - uses: actions/checkout@v4
-    - run: pipx install poetry
-    - uses: actions/setup-python@v4
-      with:
-        python-version: "3.11"  # Set to your Python version
-        cache: poetry
-    - run: poetry install
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+    - name: Set up Python
+      run: uv python install
     - run: |
-        poetry run plain compile
-        poetry run plain test
+        uv run plain compile
+        uv run plain test
       env:
         PLAIN_DEBUG: true
         PLAIN_SECRET_KEY: testing

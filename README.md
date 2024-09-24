@@ -14,7 +14,7 @@ rm -rf .git
 git init
 ```
 
-Then, install the dependencies (note that you'll need [Poetry](https://python-poetry.org/) installed on your system):
+Then, install the dependencies (note that you'll need [uv](https://docs.astral.sh/uv/getting-started/installation/) installed on your system):
 
 ```bash
 ./scripts/install

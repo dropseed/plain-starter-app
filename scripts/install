@@ -5,10 +5,8 @@ if [ ! -f .env ]; then
     cp .env.example .env
 fi
 
-echo "Installing dependencies with poetry"
-poetry config installer.parallel false  # Avoid race condition in git repo cloning
-poetry config virtualenvs.in-project true
-poetry install
+echo "Installing dependencies with uv"
+uv sync
 
 echo "Installing plain pre-commit hooks"
-poetry run plain pre-commit --install
+uv run plain pre-commit --install

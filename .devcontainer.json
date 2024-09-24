@@ -1,8 +1,8 @@
 {
-    "onCreateCommand": "pipx install poetry",
+    "onCreateCommand": "pipx install uv",
     "updateContentCommand": "./scripts/install",
     "postCreateCommand": "export PATH=$PATH:.venv/bin",
-    "postAttachCommand": "poetry run plain dev",
+    "postAttachCommand": "uv run plain dev",
     "customizations": {
         "codespaces": {
             "openFiles": [

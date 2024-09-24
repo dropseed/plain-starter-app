@@ -1,33 +1,31 @@
-[tool.poetry]
+[project]
 name = "app"
-version = "0.0.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "plain<1.0.0",
+    "plain.models<1.0.0",
+    "plain.auth<1.0.0",
+    "plain.code<1.0.0",
+    "plain.passwords<1.0.0",
+    "plain.sessions<1.0.0",
+    "plain.staff<1.0.0",
+    "plain.tailwind<1.0.0",
+    "plain.htmx<1.0.0",
+    "plain.elements<1.0.0",
+    "psycopg2-binary>=2.9.9",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-psycopg2-binary = "^2.9.9"
-plain = "<1.0.0"
-"plain.models" = "<1.0.0"
-"plain.auth" = "<1.0.0"
-"plain.code" = "<1.0.0"
-"plain.passwords" = "<1.0.0"
-"plain.sessions" = "<1.0.0"
-"plain.staff" = "<1.0.0"
-"plain.tailwind" = "<1.0.0"
-"plain.htmx" = "<1.0.0"
-"plain.elements" = "<1.0.0"
-
-[tool.poetry.group.dev.dependencies]
-"plain.dev" = "<1.0.0"
-"plain.pytest" = "<1.0.0"
+[tool.uv]
+dev-dependencies = [
+    "plain-dev<1.0.0",
+    "plain-pytest<1.0.0",
+]
 
 [tool.plain.dev.services]
 postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
 
 [tool.plain.tailwind]
 version = "3.4.4"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
