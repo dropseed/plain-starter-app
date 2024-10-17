@@ -16,12 +16,8 @@ AUTH_USER_MODEL = "users.User"
 AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [
-    "plain.middleware.security.SecurityMiddleware",
     "plain.sessions.middleware.SessionMiddleware",
-    "plain.middleware.common.CommonMiddleware",
-    "plain.csrf.middleware.CsrfViewMiddleware",
     "plain.auth.middleware.AuthenticationMiddleware",
-    "plain.middleware.clickjacking.XFrameOptionsMiddleware",
     "plain.staff.StaffMiddleware",
 ]
 
