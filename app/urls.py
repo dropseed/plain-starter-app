@@ -1,8 +1,9 @@
 import plain.assets.urls
 import plain.staff.urls
-import views
 from plain.auth.views import LogoutView
 from plain.urls import include, path
+
+from . import views
 
 urlpatterns = [
     path("assets/", include(plain.assets.urls)),

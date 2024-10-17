@@ -9,7 +9,7 @@ INSTALLED_PACKAGES = [
     "plain.htmx",
     "plain.staff",
     # Local packages
-    "users",
+    "app.users",
 ]
 
 AUTH_USER_MODEL = "users.User"

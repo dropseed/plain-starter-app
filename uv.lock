@@ -252,16 +252,16 @@ wheels = [
 
 [[package]]
 name = "plain"
-version = "0.8.1"
+version = "0.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "jinja2" },
     { name = "python-dotenv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/c6/e2709bc01f2e558bf96143397eee644dfb5aed53877519bf70d2a3747946/plain-0.8.1.tar.gz", hash = "sha256:b8f695833c37dfa27a7f468348a543b3950a41a504e8e4e145382d3d564dafa2", size = 179303 }
+sdist = { url = "https://files.pythonhosted.org/packages/b4/6c/2154d79fab03824658d202af2dbc40ee3374dac0fcb28476b5fc93a75336/plain-0.9.0.tar.gz", hash = "sha256:78482d8278eb5a9418c54f691e42c6f924d7b6be6605dea4023f0ce6d7842e03", size = 179387 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/73/3d/889adbdb4e0967b4033a1315543e862a8265a356b6559c49266d7f69990a/plain-0.8.1-py3-none-any.whl", hash = "sha256:478eea36650f41eb6327ea7e6319da62b3725e5b4f613bc9b436cf61bec26789", size = 222739 },
+    { url = "https://files.pythonhosted.org/packages/7f/51/175ca8b5c6478fe504aa321391863e389bfbf71b5171b66239a6c7e8c42f/plain-0.9.0-py3-none-any.whl", hash = "sha256:6ea644b642e44d45b7892ba82174eed7851baba9ce5eb08e0e2b7f296bb68061", size = 222820 },
 ]
 
 [[package]]
@@ -293,7 +293,7 @@ wheels = [
 
 [[package]]
 name = "plain-dev"
-version = "0.9.0"
+version = "0.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -303,9 +303,9 @@ dependencies = [
     { name = "psycopg", extra = ["binary"] },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f9/3d/53127fdc214d34fb317019f8808edf76b54c4227950e5a8fde8a7275691b/plain_dev-0.9.0.tar.gz", hash = "sha256:eceadf6c4f4de4ec2196fbe1c51c758b72844c38569e05d2086df407dcd90b3c", size = 23026 }
+sdist = { url = "https://files.pythonhosted.org/packages/10/76/db5859da4119e8741af3165ed0f848aee063c25ef496d11d45475cba8bd8/plain_dev-0.10.0.tar.gz", hash = "sha256:1e6d135bc95fc50f92d1f29a6ce2f7e69fc883d56ae25614c6d14553bc7c6af4", size = 23028 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/94/668fbbb82a18c6b1f8e834ae8f1dad0aefa091793a351fbca9abb0ca7f76/plain_dev-0.9.0-py3-none-any.whl", hash = "sha256:6d656e45c24e6a3a6c852fea9a086d5064acab9083a903dd56cff02370a6ba07", size = 30185 },
+    { url = "https://files.pythonhosted.org/packages/c6/0d/32189a43d36775c067a7da461b3ca22c013c229373810584101f945b27b4/plain_dev-0.10.0-py3-none-any.whl", hash = "sha256:15c6a435d5ac2867d85d0dfd0c4f809456361db91b240eb49e610ef323575d21", size = 30177 },
 ]
 
 [[package]]
