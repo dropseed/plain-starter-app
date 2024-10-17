@@ -23,5 +23,5 @@ Then, install the dependencies (note that you'll need [uv](https://docs.astral.s
 Now you can fire up the development server and open http://localhost:8000 in your browser:
 
 ```bash
-plain dev
+uv run plain dev
 ```
