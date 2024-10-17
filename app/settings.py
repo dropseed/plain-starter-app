@@ -1,3 +1,5 @@
+TIME_ZONE = "America/Chicago"
+
 INSTALLED_PACKAGES = [
     "plain.models",
     "plain.tailwind",
