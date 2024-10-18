@@ -310,14 +310,14 @@ wheels = [
 
 [[package]]
 name = "plain-elements"
-version = "0.2.0"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5b/ab/e0faab4847bc9adb86500b907810eb8ccc78c2498db086ed8fa72b4de76c/plain_elements-0.2.0.tar.gz", hash = "sha256:893cdbd46f755d5394ee6932f71ac468840114590ee5db52f7dd16db08ddd8bf", size = 3635 }
+sdist = { url = "https://files.pythonhosted.org/packages/c1/ed/9a78b6ed265df0b47648b57d1fb7b7b848df26b785a3f4cababeb57b50e1/plain_elements-0.3.0.tar.gz", hash = "sha256:f1d7bb29d364773c6f47c49f15271b02dbec7f2c4a34726a873e0761491674ba", size = 3365 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cb/ec/5e1f2dc832ec00ed516266862e72d33b6495246caab643149a0bba014a17/plain_elements-0.2.0-py3-none-any.whl", hash = "sha256:4c50f51a982110c75856ebd53d6e03882028ad691c09f3dddc037ab8ec7104a1", size = 4495 },
+    { url = "https://files.pythonhosted.org/packages/1e/21/29b4aaa416a5fa9fbf847ed2917e55a2c1e5c8dc275ffd971cf69ef0ada4/plain_elements-0.3.0-py3-none-any.whl", hash = "sha256:787b5186979f3b301c6d71cf61b06a585e212a07770f7715db7116b3b84f779c", size = 4261 },
 ]
 
 [[package]]
@@ -385,7 +385,7 @@ wheels = [
 
 [[package]]
 name = "plain-staff"
-version = "0.4.0"
+version = "0.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
@@ -394,9 +394,9 @@ dependencies = [
     { name = "plain-tailwind" },
     { name = "sqlparse" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/89/d0/846fa0e6095c84c222b48220c94b8255b9d5c506df6ea326f0188edf47a2/plain_staff-0.4.0.tar.gz", hash = "sha256:8ee9b3454dfe17433e0097cf51c5eb097a523fd80189a250f554d3061e71c6ba", size = 124334 }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/52/f084ec177d9f7c20b314b1bc6384a810ca6825a6196b7829769aa7e0df18/plain_staff-0.4.1.tar.gz", hash = "sha256:5a61479d4c6e170a0e2074e1a7627510398309b457e24bc35ef73aefbd8b6665", size = 124333 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/a2/be69f425394d26454e0bb513bb9e88887f81edec7523496585f15b7e4df9/plain_staff-0.4.0-py3-none-any.whl", hash = "sha256:512f991aa1173ca676f63eeebe522f4415931dbe9c51ad193135a064af36cff3", size = 142695 },
+    { url = "https://files.pythonhosted.org/packages/e4/62/78d2dc2c0de89d988991275bdf987300f280e96509ccff2a1eaf4d5bdfca/plain_staff-0.4.1-py3-none-any.whl", hash = "sha256:c3224d75b6cfa0774eabdf17ab5e006cbaee0666913d5162cf0a1047cd8335e9", size = 142692 },
 ]
 
 [[package]]

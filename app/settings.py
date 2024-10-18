@@ -8,6 +8,7 @@ INSTALLED_PACKAGES = [
     "plain.sessions",
     "plain.htmx",
     "plain.staff",
+    "plain.elements",
     # Local packages
     "app.users",
 ]
@@ -20,5 +21,3 @@ MIDDLEWARE = [
     "plain.auth.middleware.AuthenticationMiddleware",
     "plain.staff.StaffMiddleware",
 ]
-
-JINJA_LOADER = "plain.elements.ElementsLoader"
