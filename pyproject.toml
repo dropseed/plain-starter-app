@@ -15,7 +15,7 @@ dependencies = [
     "plain.tailwind<1.0.0",
     "plain.htmx<1.0.0",
     "plain.elements<1.0.0",
-    "psycopg2-binary>=2.9.9",
+    "psycopg[binary]>=3.2.3",
 ]
 
 [tool.uv]
