@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex flex-col items-center mt-20">
+<div class="flex flex-col items-center mx-5 mt-20">
     <h1 class="text-5xl tracking-tight text-center">{{ message }}</h1>
 
     {% if request.user %}
@@ -19,9 +19,21 @@
 
     <div class="mt-8 space-y-2 text-center">
         <p>You are running Plain {{ plain_version }} on Python {{ python_version }}.</p>
-        <p>Read the <a class="text-blue-600 hover:underline" href="https://plainframework.com/docs/">documentation</a> or <a class="text-blue-600 hover:underline" href="{{ url('staff:index') }}">go to the staff dashboard</a> (make yourself staff first)</p>
-        <p>Create a new local package with <code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain create {name}</code></p>
+        <p>Read the <a class="text-blue-600 hover:underline" href="https://plainframework.com/docs/">documentation</a> or <a class="text-blue-600 hover:underline" href="{{ url('admin:index') }}">go to the admin dashboard</a> (make yourself an admin first)</p>
     </div>
+
+    <div class="grid w-full max-w-5xl gap-8 mt-12 sm:grid-cols-2">
+        <div class="p-5 space-y-2 text-center rounded bg-black/5">
+            <h2 class="font-semibold tracking-light">Create an admin user</h2>
+            <p><code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain users create-admin</code></p>
+        </div>
+
+        <div class="p-5 space-y-2 text-center rounded bg-black/5">
+            <h2 class="font-semibold tracking-light">Organize your app into packages</h2>
+            <p><code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain create {name}</code></p>
+        </div>
+    </div>
+
 </div>
 
 {% endblock %}

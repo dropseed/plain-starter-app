@@ -11,7 +11,7 @@ dependencies = [
     "plain.code<1.0.0",
     "plain.passwords<1.0.0",
     "plain.sessions<1.0.0",
-    "plain.staff<1.0.0",
+    "plain.admin<1.0.0",
     "plain.tailwind<1.0.0",
     "plain.htmx<1.0.0",
     "plain.elements<1.0.0",

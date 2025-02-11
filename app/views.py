@@ -24,6 +24,7 @@ class BaseViewMixin(AuthViewMixin):
 class HomeView(BaseViewMixin, TemplateView):
     template_name = "home.html"
     html_title = "Home"
+    login_required = False
 
     def get_template_context(self):
         context = super().get_template_context()
@@ -33,9 +34,10 @@ class HomeView(BaseViewMixin, TemplateView):
         return context
 
 
-class ExamplePublicView(HomeView):
-    login_required = False
-    html_title = "Public"
+class ExamplePrivateView(BaseViewMixin, TemplateView):
+    template_name = "private.html"
+    html_title = "Private"
+    login_required = True
 
 
 class LoginView(BaseViewMixin, PasswordLoginView):

@@ -7,7 +7,7 @@ INSTALLED_PACKAGES = [
     "plain.passwords",
     "plain.sessions",
     "plain.htmx",
-    "plain.staff",
+    "plain.admin",
     "plain.elements",
     # Local packages
     "app.users",
@@ -19,5 +19,5 @@ AUTH_LOGIN_URL = "login"
 MIDDLEWARE = [
     "plain.sessions.middleware.SessionMiddleware",
     "plain.auth.middleware.AuthenticationMiddleware",
-    "plain.staff.StaffMiddleware",
+    "plain.admin.AdminMiddleware",
 ]
