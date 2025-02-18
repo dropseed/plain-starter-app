@@ -1,5 +1,9 @@
-default_namespace = "users"
+from plain.urls import RouterBase, register_router
 
-urlpatterns = [
-    # path("", views.IndexView, name="index"),
-]
+
+@register_router
+class Router(RouterBase):
+    namespace = "users"
+    urls = [
+        # path("", views.IndexView, name="index"),
+    ]
