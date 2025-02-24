@@ -23,7 +23,7 @@ jobs:
     - name: Set up Python
       run: uv python install
     - run: |
-        uv run plain compile
+        uv run plain build
         uv run plain test
       env:
         PLAIN_DEBUG: true

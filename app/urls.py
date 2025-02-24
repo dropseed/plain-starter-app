@@ -8,6 +8,7 @@ from . import views
 
 @register_router
 class Router(RouterBase):
+    namespace = ""
     urls = [
         include("assets/", plain.assets.urls),
         include("admin/", plain.admin.urls),
