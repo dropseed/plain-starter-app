@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+/* Add Plain packages to the sources */
+@import "./.plain/tailwind.css";
+
+/* Form styling plugin (optional) */
+@plugin "@tailwindcss/forms";

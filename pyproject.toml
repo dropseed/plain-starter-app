@@ -28,4 +28,4 @@ dev-dependencies = [
 postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
 
 [tool.plain.tailwind]
-version = "3.4.4"
+version = "4.0.9"

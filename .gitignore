@@ -1,8 +1,8 @@
 # Plain temporary files
 /.plain
 
-# Compiled assets
-/app/assets/dist
+# Compiled Tailwind css
+/app/assets/tailwind.min.css
 
 # Python files
 __pycache__
