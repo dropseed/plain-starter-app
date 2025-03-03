@@ -1,6 +1,8 @@
 import click
+from plain.cli import register_cli
 
 
+@register_cli("users")
 @click.group()
 def cli():
     """Custom app.users commands"""
