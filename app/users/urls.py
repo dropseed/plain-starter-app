@@ -1,8 +1,7 @@
-from plain.urls import RouterBase, register_router
+from plain.urls import Router
 
 
-@register_router
-class Router(RouterBase):
+class UsersRouter(Router):
     namespace = "users"
     urls = [
         # path("", views.IndexView, name="index"),

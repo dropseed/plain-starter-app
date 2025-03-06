@@ -1,17 +1,16 @@
-import plain.admin.urls
-import plain.assets.urls
+from plain.admin.urls import AdminRouter
+from plain.assets.urls import AssetsRouter
 from plain.auth.views import LogoutView
-from plain.urls import RouterBase, include, path, register_router
+from plain.urls import Router, include, path
 
 from . import views
 
 
-@register_router
-class Router(RouterBase):
+class AppRouter(Router):
     namespace = ""
     urls = [
-        include("assets/", plain.assets.urls),
-        include("admin/", plain.admin.urls),
+        include("assets/", AssetsRouter),
+        include("admin/", AdminRouter),
         path("logout/", LogoutView, name="logout"),
         path("login/", views.LoginView, name="login"),
         path("private/", views.ExamplePrivateView),
