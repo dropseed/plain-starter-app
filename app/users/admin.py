@@ -35,5 +35,6 @@ class UserAdmin(AdminViewset):
         model = User
 
     class UpdateView(AdminModelUpdateView):
+        template_name = "admin/users/user_form.html"
         model = User
         form_class = UserForm
