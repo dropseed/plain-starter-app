@@ -26,7 +26,6 @@ class UserAdmin(AdminViewset):
             "created_at__date",
         ]
         queryset_order = ["-created_at"]
-        # get extra columns? custom, can't be ordered/filtered
         search_fields = [
             "email",
         ]
