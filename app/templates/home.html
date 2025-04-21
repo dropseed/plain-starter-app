@@ -11,7 +11,7 @@
             {{ request.user }}
             <form action="{{ url('logout') }}" method="post">
                 {{ csrf_input }}
-                <button class="text-sm hover:underline" type="submit">Log out</button>
+                <button class="text-sm cursor-pointer hover:underline" type="submit">Log out</button>
             </form>
         </div>
     </div>
@@ -23,12 +23,12 @@
     </div>
 
     <div class="grid w-full max-w-5xl gap-8 mt-12 sm:grid-cols-2">
-        <div class="p-5 space-y-2 text-center rounded bg-black/5">
+        <div class="p-5 space-y-2 text-center inset-shadow-sm rounded bg-black/5">
             <h2 class="font-semibold tracking-light">Create an admin user</h2>
             <p><code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain users create-admin</code></p>
         </div>
 
-        <div class="p-5 space-y-2 text-center rounded bg-black/5">
+        <div class="p-5 space-y-2 text-center inset-shadow-sm rounded bg-black/5">
             <h2 class="font-semibold tracking-light">Organize your app into packages</h2>
             <p><code class="bg-black/90 text-white text-sm px-1.5 py-0.5 rounded-md">plain create {name}</code></p>
         </div>
