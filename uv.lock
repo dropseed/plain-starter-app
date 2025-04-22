@@ -209,20 +209,20 @@ wheels = [
 
 [[package]]
 name = "plain"
-version = "0.41.0"
+version = "0.42.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "jinja2" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0e/64/506064567936283fce4fe62229d15f8cba3230185fa51567700cbe36bfa9/plain-0.41.0.tar.gz", hash = "sha256:f493c5e38d300230c79e72c3f364d5f7365d25e460791a645d80be0b2c547d6b", size = 160157 }
+sdist = { url = "https://files.pythonhosted.org/packages/91/e5/312349f4649b290914c871aab9f632d6a6512d282c1afcec7db04f261aa3/plain-0.42.0.tar.gz", hash = "sha256:6b097ede4cbf9ed3db3c8789724d49d5f91282903e551dd1c96f22940a00a3b0", size = 159880 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/7a/210f53f08c087a2479ec28dbee49157f3e8b65a33a707cf01b213eb70583/plain-0.41.0-py3-none-any.whl", hash = "sha256:54051454c4546b59da7b21b6290bafbfe7b1a02343dc3993a87ff0a08fad1064", size = 208968 },
+    { url = "https://files.pythonhosted.org/packages/02/92/d697092fab29dfef35940988977027a98d21dbf8ab3adde28c2c601ef323/plain-0.42.0-py3-none-any.whl", hash = "sha256:dfd1c8bb759b67646f521029aeb78ebfc70e2ac5262ec653dcdeedfdb0f5c418", size = 208710 },
 ]
 
 [[package]]
 name = "plain-admin"
-version = "0.28.0"
+version = "0.29.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
@@ -231,9 +231,9 @@ dependencies = [
     { name = "plain-tailwind" },
     { name = "sqlparse" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/93/75/38f690a076016dced62c2713cc82ddc929c08e0e1a413599d1ce8fc68c93/plain_admin-0.28.0.tar.gz", hash = "sha256:2f687fee89320e219d870d8537a06cbb20f73ffe522ffa9a385744055d6c816b", size = 148627 }
+sdist = { url = "https://files.pythonhosted.org/packages/87/94/efd63b64513081e1732d635a2911471a12f84a52cfbb244af03fcc55cfe4/plain_admin-0.29.1.tar.gz", hash = "sha256:5d290be364938ae3ac4f3f41314114d2ae5c80b33b71cb6cd2c13831e60e3763", size = 148798 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2d/c0/e8124fd258d61e067e21b05fbdcb9730bca41ce91b68f81f2acae568e289/plain_admin-0.28.0-py3-none-any.whl", hash = "sha256:68908d3d1edc425a7d11597bcde16c0a36e249d66ceda5dc43d7ff36a23172a9", size = 172394 },
+    { url = "https://files.pythonhosted.org/packages/7d/c3/9d4f88e80a91d9eab87a952a27f46c6c4493c583ed02176927b08d4117d8/plain_admin-0.29.1-py3-none-any.whl", hash = "sha256:707e8e3f530a28a0d4f5faa47c4bd5fece096a7e0e6f05eaa5c9a103d8f2a1ad", size = 173721 },
 ]
 
 [[package]]
@@ -348,14 +348,14 @@ wheels = [
 
 [[package]]
 name = "plain-sessions"
-version = "0.20.0"
+version = "0.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/49/3f/69ecb9b1ae1409fd332bfc5027ee5c013d7f15ef02630faa8954aa5e10d9/plain_sessions-0.20.0.tar.gz", hash = "sha256:4442fb60fbdded2edb7e1d86ce72e81fe31f7682d304190b139c45508fd3a479", size = 7972 }
+sdist = { url = "https://files.pythonhosted.org/packages/10/8f/418685ef0325b9608ee2d55b2e289b3029c8f1155d800e39bdcc62bba946/plain_sessions-0.21.0.tar.gz", hash = "sha256:076db8ea96033da273c6c0fd88700760207e1b7b2dcb4d756151528e516c015a", size = 8316 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/58/40/f1c67a70413ade3516b2a8d87106056a3dcc6220c3573681d39f20254a5d/plain_sessions-0.20.0-py3-none-any.whl", hash = "sha256:bbf2a5d40af3c6693226933115267e153778284b2229daebd44e7eadf4dbe96d", size = 12146 },
+    { url = "https://files.pythonhosted.org/packages/c7/dc/1d3a8af6b90a766217a3d3d0d60f7a890fae3b2e7f752a15015f2cabef42/plain_sessions-0.21.0-py3-none-any.whl", hash = "sha256:16279eed41d712c7395d6e9c9898b39f9ee05cb97be25576ddc8876393a705d2", size = 12929 },
 ]
 
 [[package]]
