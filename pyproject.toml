@@ -29,3 +29,6 @@ postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.
 
 [tool.plain.tailwind]
 version = "4.0.9"
+
+[tool.plain.code.biome]
+version = "1.9.4"

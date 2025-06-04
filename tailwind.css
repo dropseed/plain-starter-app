@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* Add Plain packages to the sources */
 @import "./.plain/tailwind.css";
