@@ -29,6 +29,7 @@ class UserAdmin(AdminViewset):
         search_fields = [
             "email",
         ]
+        nav_icon = "people-fill"
 
     class DetailView(AdminModelDetailView):
         model = User
