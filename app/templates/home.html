@@ -10,7 +10,6 @@
         <div>
             {{ request.user }}
             <form action="{{ url('logout') }}" method="post">
-                {{ csrf_input }}
                 <button class="text-sm cursor-pointer hover:underline" type="submit">Log out</button>
             </form>
         </div>
