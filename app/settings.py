@@ -9,6 +9,7 @@ INSTALLED_PACKAGES = [
     "plain.passwords",
     "plain.sessions",
     "plain.htmx",
+    "plain.toolbar",
     "plain.admin",
     "plain.elements",
     # Local packages

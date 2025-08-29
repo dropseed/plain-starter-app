@@ -15,6 +15,7 @@ dependencies = [
     "plain.tailwind",
     "plain.htmx",
     "plain.elements",
+    "plain.toolbar",
     "psycopg[binary]>=3.2.3",
 ]
 
