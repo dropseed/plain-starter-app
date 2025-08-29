@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="py-12 px-4 flex items-center justify-center">
+    <div class="max-w-2xl w-full mx-auto">
+        <div class="bg-white rounded-xl shadow-lg/5 border border-stone-100 p-8">
+            {% if request.user %}
+            <h1 class="text-4xl font-semibold text-stone-900 mb-6">You're logged in!</h1>
+            <p class="text-sm text-stone-800 mb-4">Now create your first package to start building. From a terminal run:</p>
+            <div class="flex items-center justify-between bg-stone-50 rounded-md border border-stone-200 p-3 mb-3">
+                <code class="text-sm font-mono text-stone-900">plain create teams</code>
+                <button onclick="navigator.clipboard.writeText('plain create teams')" class="text-xs text-blue-600 hover:text-blue-700 cursor-pointer">Copy command</button>
+            </div>
+            <p class="text-xs text-stone-500 mb-6">This will create a new "teams" package with models, views, and templates to get you started.</p>
+            {% else %}
+            <h1 class="text-4xl font-semibold text-stone-900 mb-6">Welcome to Plain!</h1>
+            <p class="text-sm text-stone-800 mb-4">First, create an admin user for yourself. From a terminal run:</p>
+            <div class="flex items-center justify-between bg-stone-50 rounded-md border border-stone-200 p-3">
+                <code class="text-sm font-mono text-stone-900">plain users create-admin</code>
+                <button onclick="navigator.clipboard.writeText('plain users create-admin')" class="text-xs text-blue-600 hover:text-blue-700 cursor-pointer">Copy command</button>
+            </div>
+            <div class="flex justify-end mt-8">
+                <a href="{{ url('login') }}" class="inline-flex items-center px-4 py-2 bg-stone-900 text-white text-sm rounded-lg hover:bg-stone-800 transition-colors">
+                    Log in to continue →
+                </a>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="text-center text-xs text-stone-500 mt-6">
+            <p>Plain {{ plain_version }} • Python {{ python_version }}</p>
+        </div>
+    </div>
+</div>
+
+<script>
+// Simple copy to clipboard feedback
+document.querySelectorAll('[onclick*="clipboard"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = originalText, 2000);
+    });
+});
+</script>
+
+{% endblock %}

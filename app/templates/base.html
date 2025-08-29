@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ html_title|default("My App") }}</title>
+    <title>{{ html_title|default("App") }}</title>
     {% tailwind_css %}
 </head>
-<body>
+<body class="bg-stone-50">
+    <header class="max-w-7xl mx-auto flex justify-between items-center p-4 lg:px-8">
+        <nav class="flex items-center gap-4">
+            <a href="{{ url('index') }}" class="text-sm text-stone-800 hover:text-stone-900 font-medium">Plain Starter App</a>
+            <a href="https://plainframework.com/docs/" class="text-sm text-stone-800 hover:text-stone-900" target="_blank">Docs</a>
+        </nav>
+
+        <nav class="flex items-center gap-6">
+            {% if request.user %}
+            <div class="relative group">
+                <div class="flex items-center gap-2 hover:bg-stone-50 rounded-full p-1 transition-colors cursor-pointer">
+                    <img src="{{ request.user.get_avatar_url() }}" alt="{{ request.user }}" title="{{ request.user }}" class="w-6 h-6 rounded-full border border-stone-200">
+                </div>
+                <div class="absolute right-0 mt-3 w-56 bg-white rounded-lg shadow-sm border border-stone-200 py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div class="px-4 py-3 border-b border-stone-50">
+                        <p class="text-sm text-stone-900 font-medium truncate">{{ request.user }}</p>
+                    </div>
+                    <div class="py-1">
+                        <form action="{{ url('logout') }}" method="post">
+                            <button type="submit" class="cursor-pointer w-full text-left px-4 py-3 text-sm text-stone-800 hover:bg-stone-50 transition-colors flex items-center gap-2">
+                                <svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                                </svg>
+                                Log out
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <a href="{{ url('login') }}" class="text-sm text-stone-800 hover:text-stone-900">Log in</a>
+            {% endif %}
+        </nav>
+    </header>
+
     {% block content required %}{% endblock %}
 
     {% toolbar %}

@@ -15,5 +15,5 @@ class AppRouter(Router):
         path("login/", views.LoginView, name="login"),
         path("private/", views.ExamplePrivateView),
         path("signup/", views.SignupView, name="signup"),
-        path("", views.HomeView),
+        path("", views.IndexView, name="index"),
     ]

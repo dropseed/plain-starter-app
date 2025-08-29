@@ -21,8 +21,8 @@ class BaseViewMixin(AuthViewMixin):
         return self.html_title
 
 
-class HomeView(BaseViewMixin, TemplateView):
-    template_name = "home.html"
+class IndexView(BaseViewMixin, TemplateView):
+    template_name = "index.html"
     html_title = "Home"
     login_required = False
 
