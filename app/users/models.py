@@ -12,13 +12,14 @@ class User(models.Model):
     is_admin = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    class Meta:
-        constraints = [
+    model_options = models.Options(
+        constraints=[
             models.UniqueConstraint(
                 Lower("email"),
                 name="unique_lower_email",
             ),
-        ]
+        ],
+    )
 
     def __str__(self):
         return self.email

@@ -21,6 +21,5 @@ AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [
     "plain.sessions.middleware.SessionMiddleware",
-    "plain.auth.middleware.AuthenticationMiddleware",
     "plain.admin.AdminMiddleware",
 ]
