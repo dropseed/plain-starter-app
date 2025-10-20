@@ -19,8 +19,8 @@ dependencies = [
     "psycopg[binary]>=3.2.3",
 ]
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "plain-dev",
     "plain-pytest",
 ]
