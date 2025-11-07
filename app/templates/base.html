@@ -7,6 +7,7 @@
     {% tailwind_css %}
 </head>
 <body class="bg-stone-50">
+    {% block header %}
     <header class="max-w-7xl mx-auto flex justify-between items-center p-4 lg:px-8">
         <nav class="flex items-center gap-4">
             <a href="{{ url('index') }}" class="text-sm text-stone-800 hover:text-stone-900 font-medium">Plain Starter App</a>
@@ -40,6 +41,7 @@
             {% endif %}
         </nav>
     </header>
+    {% endblock %}
 
     {% block content required %}{% endblock %}
 
