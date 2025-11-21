@@ -9,4 +9,4 @@ echo "Installing dependencies with uv"
 uv sync
 
 echo "Installing plain pre-commit hooks"
-uv run plain pre-commit --install
+uv run plain pre-commit install
