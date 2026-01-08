@@ -6,6 +6,7 @@ from plain.admin.views import (
     register_viewset,
 )
 from plain.models.forms import ModelForm
+from plain.urls import reverse
 
 from .models import User
 
@@ -31,10 +32,25 @@ class UserAdmin(AdminViewset):
         ]
         nav_icon = "people-fill"
 
+        def get_object_links(self, obj):
+            links = super().get_object_links(obj)
+            links["Impersonate"] = reverse("admin:impersonate:start", obj.id)
+            return links
+
     class DetailView(AdminModelDetailView):
         model = User
+
+        def get_links(self):
+            links = super().get_links()
+            links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
+            return links
 
     class UpdateView(AdminModelUpdateView):
         template_name = "admin/users/user_form.html"
         model = User
         form_class = UserForm
+
+        def get_links(self):
+            links = super().get_links()
+            links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
+            return links
