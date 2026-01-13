@@ -13,3 +13,7 @@ __pycache__
 # env files
 /.env*
 !/.env.example
+
+# Agent skills
+/.claude/skills/plain-*
+/.codex/skills/plain-*
