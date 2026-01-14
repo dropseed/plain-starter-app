@@ -32,7 +32,7 @@ class UserAdmin(AdminViewset):
         ]
         nav_icon = "people-fill"
 
-        def get_object_links(self, obj):
+        def get_object_links(self, obj: User) -> dict[str, str]:
             links = super().get_object_links(obj)
             links["Impersonate"] = reverse("admin:impersonate:start", obj.id)
             return links
@@ -40,7 +40,7 @@ class UserAdmin(AdminViewset):
     class DetailView(AdminModelDetailView):
         model = User
 
-        def get_links(self):
+        def get_links(self) -> dict[str, str]:
             links = super().get_links()
             links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
             return links
@@ -50,7 +50,7 @@ class UserAdmin(AdminViewset):
         model = User
         form_class = UserForm
 
-        def get_links(self):
+        def get_links(self) -> dict[str, str]:
             links = super().get_links()
             links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
             return links

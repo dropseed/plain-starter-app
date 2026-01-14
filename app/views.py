@@ -1,4 +1,5 @@
 import sys
+from typing import Any
 
 from plain.auth.views import AuthView
 from plain.passwords.views import PasswordLoginView, PasswordSignupView
@@ -11,12 +12,12 @@ from plain.views import TemplateView
 class BaseView(AuthView, TemplateView):
     html_title = ""
 
-    def get_template_context(self):
+    def get_template_context(self) -> dict[str, Any]:
         context = super().get_template_context()
         context["html_title"] = self.get_html_title()
         return context
 
-    def get_html_title(self):
+    def get_html_title(self) -> str:
         return self.html_title
 
 
@@ -25,7 +26,7 @@ class IndexView(BaseView):
     html_title = "Home"
     login_required = False
 
-    def get_template_context(self):
+    def get_template_context(self) -> dict[str, Any]:
         context = super().get_template_context()
         context["message"] = "Welcome to Plain!"
         context["plain_version"] = __version__

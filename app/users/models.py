@@ -11,6 +11,7 @@ class User(models.Model):
     password = PasswordField()
     is_admin = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
+    time_zone = models.TimeZoneField(required=False, allow_null=True)
 
     model_options = models.Options(
         constraints=[
@@ -21,9 +22,9 @@ class User(models.Model):
         ],
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.email
 
-    def get_avatar_url(self):
+    def get_avatar_url(self) -> str:
         email_hash = hashlib.md5(self.email.lower().encode("utf-8")).hexdigest()
         return f"https://www.gravatar.com/avatar/{email_hash}?d=identicon"

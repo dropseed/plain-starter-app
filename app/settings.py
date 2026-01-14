@@ -21,5 +21,6 @@ AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [
     "plain.sessions.middleware.SessionMiddleware",
+    "app.middleware.TimezoneMiddleware",
     "plain.admin.AdminMiddleware",
 ]

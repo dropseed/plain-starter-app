@@ -4,7 +4,7 @@ from plain.cli import register_cli
 
 @register_cli("users")
 @click.group()
-def cli():
+def cli() -> None:
     """Custom app.users commands"""
     pass
 
@@ -14,7 +14,7 @@ def cli():
 @click.option(
     "--password", prompt="Password", help="The password of the user", hide_input=True
 )
-def create_admin(email, password):
+def create_admin(email: str, password: str) -> None:
     """Create an admin user"""
     from .models import User
 

@@ -341,7 +341,7 @@ wheels = [
 
 [[package]]
 name = "plain-admin"
-version = "0.59.0"
+version = "0.60.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
@@ -349,9 +349,9 @@ dependencies = [
     { name = "plain-htmx" },
     { name = "plain-tailwind" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cb/29/0380c7d186697a619c19da4e8f35fdb67055a2b5d5eff9f9b721622a1c0c/plain_admin-0.59.0.tar.gz", hash = "sha256:ebeca5f1d6a773737a64ca258695d314a02c707b93a1d4320eae422e3bb47e66", size = 383051, upload-time = "2026-01-13T14:36:47.644Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/78/6f/ed6eca57d3a1e912f5ecca3bf5a624fdce18401a3d05e96dd54f62555663/plain_admin-0.60.0.tar.gz", hash = "sha256:e9cd749a4dd84c31d91ee028695002624c403357fe602094a7451376f60642c8", size = 389450, upload-time = "2026-01-14T02:48:57.626Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/69/2205bd8f3e00c4fe3f628f9bbfaf9969fa8afdd76ae06a4ffabd27389e08/plain_admin-0.59.0-py3-none-any.whl", hash = "sha256:02016928c20940d3d5440fa5853ee3c26f9df957b9c272de8252557579192088", size = 406033, upload-time = "2026-01-13T14:36:46.202Z" },
+    { url = "https://files.pythonhosted.org/packages/29/d1/0a7b830800c867453e029d66a951a4865df76cfa6e26b72bb1bbb8dce505/plain_admin-0.60.0-py3-none-any.whl", hash = "sha256:10691519ab2b0fd5db28d0f61731032069aad053bf85af661d3cddcc2bdddf1c", size = 412947, upload-time = "2026-01-14T02:48:58.574Z" },
 ]
 
 [[package]]
@@ -370,7 +370,7 @@ wheels = [
 
 [[package]]
 name = "plain-code"
-version = "0.17.0"
+version = "0.18.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
@@ -379,14 +379,14 @@ dependencies = [
     { name = "tomlkit" },
     { name = "ty" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/69/39/20099a384c33b09572a033e695900857b530a572eb14e6e63a373af19ae2/plain_code-0.17.0.tar.gz", hash = "sha256:e827379821c984a7b1b3c3aa34cdf3992e6e29bf512236a002b6781fa84de93b", size = 8449, upload-time = "2026-01-13T14:36:56.639Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/17/a6/2ed077c10088b5f2de6783a75ffcc125e7aba4fa8f15362c680652e31041/plain_code-0.18.0.tar.gz", hash = "sha256:86cf7682b0278d68120040bdb3d9aaec23944d46395a501f6ac4340a8bce097a", size = 14059, upload-time = "2026-01-14T02:49:08.652Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/23/72/ab68315b55e70330d1f76036bf0fbac705a3b54588ad2d54bd908e39e57a/plain_code-0.17.0-py3-none-any.whl", hash = "sha256:63e291f9f1ddae579d42ef2a88e8a9a0d5b204735e0d243326466cca67074c6b", size = 12221, upload-time = "2026-01-13T14:36:57.624Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/2c/42456fb6dbaeddfff844b91d809ee6d032e34275d18f8f430bc7d42db329/plain_code-0.18.0-py3-none-any.whl", hash = "sha256:7b5df6f8bc179be6f1f9cb400314a6034da94b782ec8f8dc7321014f75d0b4fd", size = 17538, upload-time = "2026-01-14T02:49:07.662Z" },
 ]
 
 [[package]]
 name = "plain-dev"
-version = "0.50.0"
+version = "0.51.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -396,46 +396,46 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/98/d6/cd812db7e6626d1d522e83bccc762787e8831dabeefc8019f6a98b27b8e5/plain_dev-0.50.0.tar.gz", hash = "sha256:2353c43804f8763a609c895bad320bc2dd97983c8427e9536cc5ebd48d667558", size = 28365, upload-time = "2026-01-13T14:36:59.934Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/27/30/6880e1c1a575d8ea60f7a3ed07a4d2d66298bcb757fb65c3de5781bf316c/plain_dev-0.51.0.tar.gz", hash = "sha256:39e6a196eb1e1dd43d6ea5933d56c24432297965af586c9d4f4821834c4a4335", size = 29368, upload-time = "2026-01-14T02:49:11.461Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/92/13/0d87390dad7188efda29c6c29f6684f27ef4e383fbc7bf6307583895ccd3/plain_dev-0.50.0-py3-none-any.whl", hash = "sha256:580126d0eabc16f473cf9a620c1e46f2d442038f223256367f2da5fe64605857", size = 37552, upload-time = "2026-01-13T14:36:59.171Z" },
+    { url = "https://files.pythonhosted.org/packages/bd/77/a6633dcb925aa8856cf67e654c4d19eba1d6945e10338de387151a849f69/plain_dev-0.51.0-py3-none-any.whl", hash = "sha256:66b81d633f1f8b1ae7440bfaa9216ab4b93906edd25d7838e9a13ac13fea8366", size = 38985, upload-time = "2026-01-14T02:49:10.081Z" },
 ]
 
 [[package]]
 name = "plain-elements"
-version = "0.10.3"
+version = "0.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c7/c0/0b41bc85691131c8842283531bded75e475154b057ef1960a6dd00cd77a1/plain_elements-0.10.3.tar.gz", hash = "sha256:52d044011ba429797bcc2f6074a135304bd2357e626ff426d2bbe4b34fa2df7f", size = 6666, upload-time = "2025-10-31T14:40:50.398Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/e4/cf584a60c2af8333c52bcfe814db20563ccb6abee1cfbbe5a21b619e21e5/plain_elements-0.11.0.tar.gz", hash = "sha256:2839dec24d962477fd9f9b9d1f34739527dd51644153b847ede227e21b52e5be", size = 7260, upload-time = "2026-01-14T02:49:13.81Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/b3/56a8a01564464a21383f66ed4012add2924074eb07a658784c0712847ee5/plain_elements-0.10.3-py3-none-any.whl", hash = "sha256:275447d69a596eb28fe040f817f2e3ffdbf4e84576bafae283c6e0bfc7ea045a", size = 7849, upload-time = "2025-10-31T14:40:49.602Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/cc/9885aa00b546b072580b1058c255d6713a910681a47594b50ff6dda0f943/plain_elements-0.11.0-py3-none-any.whl", hash = "sha256:4a1a27f555d26a6b564d1211f9a9ad06918700265efd63d2546fcdf58aac0e91", size = 8933, upload-time = "2026-01-14T02:49:12.7Z" },
 ]
 
 [[package]]
 name = "plain-htmx"
-version = "0.15.1"
+version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8a/49/86ff51a3df96198f142404a55effa9420f874457d025e7929125279c2fca/plain_htmx-0.15.1.tar.gz", hash = "sha256:f8258d948c3be164eec2b65ae077b1c0af066b75bb2294de0a1f0503eca1dcad", size = 269001, upload-time = "2025-12-22T23:18:48.126Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/cf/e17553718c14093363bb801991bdcb0f4aed0373dab01521f26a0fd85dd5/plain_htmx-0.16.0.tar.gz", hash = "sha256:0c6f7e48a076f5942118647e846b45d3fa9aa37e9102fb97977219fd68c17b06", size = 268857, upload-time = "2026-01-14T02:49:22.375Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9f/cc/04e015bc95d4facdbeae52a0f75f86bd0afdb92f99e1a59bd2823ed60a84/plain_htmx-0.15.1-py3-none-any.whl", hash = "sha256:a7569e556c61f3c0498fa923f5bbe5760dc250888674adfc9148d2e8b6b657a8", size = 292186, upload-time = "2025-12-22T23:18:46.648Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/1a/fbd280afe99ca3b6aa5741592885e3039e4e86af878b444de607b204f8cc/plain_htmx-0.16.0-py3-none-any.whl", hash = "sha256:a40604cf350a390f23d3aa0521cfb92c3a8983361ecc07ed6aa82f6747c839a6", size = 292096, upload-time = "2026-01-14T02:49:23.517Z" },
 ]
 
 [[package]]
 name = "plain-models"
-version = "0.71.0"
+version = "0.72.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
     { name = "sqlparse" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/60/5f/85c373486c34e75574172f357a64f66ecd201781b8684d26790d45d83840/plain_models-0.71.0.tar.gz", hash = "sha256:b5afe4b62175968c92b96af2ae5de0f55c40910da0979f89fb8cf23775dd58f0", size = 401001, upload-time = "2026-01-13T14:37:12.26Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/35/6fe1a0f6614e4f069544dfb5d53f3b07682391cf835cd18a792d030ee922/plain_models-0.72.0.tar.gz", hash = "sha256:579057cb7f0c4291f9d7a630fdb3e0276789d05556dbe5854f80b7ae6e0fd2b6", size = 401997, upload-time = "2026-01-14T02:49:28.822Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/a0/8b27ca421a625c9637747f5630a5791e34873b81e97b21029b78fb78a587/plain_models-0.71.0-py3-none-any.whl", hash = "sha256:0085cdecb5317ce9b60ccf9e62221bce6d2f2c7f5b84736d85258d75a4b9e712", size = 459183, upload-time = "2026-01-13T14:37:10.421Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/f3/7a0a4936dd94871116898e4ed7f420ecc8dfcd8cff86b493ce3ec5a027b4/plain_models-0.72.0-py3-none-any.whl", hash = "sha256:86deed9f36ac56e56f7374f54e141154a9d762ddba36d67c3380b83ced964f78", size = 460189, upload-time = "2026-01-14T02:49:30.194Z" },
 ]
 
 [[package]]
@@ -452,7 +452,7 @@ wheels = [
 
 [[package]]
 name = "plain-pytest"
-version = "0.14.0"
+version = "0.15.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -461,21 +461,21 @@ dependencies = [
     { name = "pytest" },
     { name = "python-dotenv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/74/a4/e8e5231114de5fbdcbe83343775529c4c1d5e9aebf74adbf57dee14f5ab8/plain_pytest-0.14.0.tar.gz", hash = "sha256:dbaf3e0bb223e7c7d5db489398d09484ffc1a90d0634be3bf751e5ec2ca86abb", size = 7927, upload-time = "2026-01-13T14:37:26.079Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dd/d0/36da86a93bba6a7c599400b3cc3e28653a54fc18304ee8fdbcd4a1182512/plain_pytest-0.15.0.tar.gz", hash = "sha256:1d1c7182f65a6dde23076506d40d6acbc231fb1c617146b5e81d6b4075aaff40", size = 8694, upload-time = "2026-01-14T02:49:45.819Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/25/6b48e8ad160ea29e3db1d6e271676767470f85ab9d82cf83970ceecbe674/plain_pytest-0.14.0-py3-none-any.whl", hash = "sha256:bdf0801924b779c161844f92e448086253af1887c98dea165d7b13a695d5e066", size = 11265, upload-time = "2026-01-13T14:37:24.845Z" },
+    { url = "https://files.pythonhosted.org/packages/64/00/619058720f3ef5d2bc45dcedb0625aef50067300d01e262e198c542ec52c/plain_pytest-0.15.0-py3-none-any.whl", hash = "sha256:3aa81e1f44c7cb90d30cafb0f34db664e628b2b9a544e3ffb35485a3833fa7ab", size = 13055, upload-time = "2026-01-14T02:49:44.992Z" },
 ]
 
 [[package]]
 name = "plain-sessions"
-version = "0.40.1"
+version = "0.41.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plain" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/e4/1ea8e954d21cf32ec2c4444a8a7c2f5d979b8ea4e8cb931ef29ed13522ce/plain_sessions-0.40.1.tar.gz", hash = "sha256:a3ee00418fda4a62155be0215b8252d65841383dac564cd5aa422b41d29abd5f", size = 15615, upload-time = "2025-11-24T21:52:48.671Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/96/ba/af66a93705d8af47139eeadacdc4bd3fe8258641ae8d367949b1e4945088/plain_sessions-0.41.0.tar.gz", hash = "sha256:10393cd5c411cda50b3628ebf76acf7f36f08ce80c05bd845b3431113991850a", size = 16105, upload-time = "2026-01-14T02:49:52.027Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/84/0f/1411061cac4e7bfaa9c7f4fe0d90e9f9e0ac383d47de073854228690c49b/plain_sessions-0.40.1-py3-none-any.whl", hash = "sha256:9be77d9cbdded6b8e57c48949a24276fda51e39ceec799067e56f47625c5744f", size = 21270, upload-time = "2025-11-24T21:52:47.762Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/1c/1149f1f7a67ab0b2e1c5ad8e6edcfe9c37eb96bc4eb216fd811d47bc8605/plain_sessions-0.41.0-py3-none-any.whl", hash = "sha256:fb9c9cad5ee135caadb7556cbdf9d07de4214110204b77205a1784814bb05e86", size = 21838, upload-time = "2026-01-14T02:49:51.285Z" },
 ]
 
 [[package]]
