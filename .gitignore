@@ -15,5 +15,5 @@ __pycache__
 !/.env.example
 
 # Agent skills
-/.claude/skills/plain-*
-/.codex/skills/plain-*
+/.claude/skills/plain*
+/.claude/rules/plain*
