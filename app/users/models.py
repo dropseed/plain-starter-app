@@ -1,17 +1,22 @@
+from __future__ import annotations
+
 import hashlib
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from plain import models
+from plain.models import types
 from plain.models.functions import Lower
-from plain.passwords.models import PasswordField
+from plain.passwords.types import PasswordField
 
 
 @models.register_model
 class User(models.Model):
-    email = models.EmailField()
-    password = PasswordField()
-    is_admin = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    time_zone = models.TimeZoneField(required=False, allow_null=True)
+    email: str = types.EmailField()
+    password: str = PasswordField()
+    is_admin: bool = types.BooleanField(default=False)
+    created_at: datetime = types.DateTimeField(auto_now_add=True)
+    time_zone: ZoneInfo | None = types.TimeZoneField(required=False, allow_null=True)
 
     model_options = models.Options(
         constraints=[
