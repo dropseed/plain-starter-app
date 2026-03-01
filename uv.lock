@@ -387,7 +387,7 @@ wheels = [
 
 [[package]]
 name = "plain-dev"
-version = "0.57.0"
+version = "0.57.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -396,9 +396,9 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/69/23/70f5db6dba076a9dbce9e4c52a8930834611d88a202a31d11fabb7f9718c/plain_dev-0.57.0.tar.gz", hash = "sha256:89df7f2ccf403fa867194e401173eb7e3abc1017bfb356be72363360437da896", size = 27532, upload-time = "2026-03-01T03:36:42.841Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0b/86/006341f9b882b2fcf49a3d6a1e10ad0bd2c8b16ac66ef65350924868beef/plain_dev-0.57.1.tar.gz", hash = "sha256:dfb28536ad09907fdb31f04539f60bd62b18bed65ac1d0adac9d9f5fbaf36165", size = 27623, upload-time = "2026-03-01T04:01:50.955Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/75/f8/c404b71107a6ce5d2eeb916d0227e365cfe0abfc3e2f9e4149475bfa121a/plain_dev-0.57.0-py3-none-any.whl", hash = "sha256:67f8d7a68cdc1c9582377d2e25b50e78c978426192b678336b886544e38db377", size = 36081, upload-time = "2026-03-01T03:36:41.718Z" },
+    { url = "https://files.pythonhosted.org/packages/af/62/977ccb12ed5f8597b1dbf6df3ba20886ff9ab6d99c35d7fb7a153675b7a6/plain_dev-0.57.1-py3-none-any.whl", hash = "sha256:e2485138556e851bb110c1d1a712511aa88e5dac220934f3445ba65dcbce51c5", size = 36181, upload-time = "2026-03-01T04:01:51.903Z" },
 ]
 
 [[package]]
