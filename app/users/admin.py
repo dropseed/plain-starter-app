@@ -21,6 +21,7 @@ class UserForm(ModelForm):
 class UserAdmin(AdminViewset):
     class ListView(AdminModelListView):
         model = User
+        allow_global_search = True
         fields = [
             "id",
             "email",

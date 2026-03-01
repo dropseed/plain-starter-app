@@ -5,31 +5,28 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "~=3.13.0"
 dependencies = [
-    "plain",
-    "plain.models",
-    "plain.auth",
-    "plain.code",
-    "plain.passwords",
-    "plain.sessions",
-    "plain.admin",
-    "plain.tailwind",
-    "plain.htmx",
-    "plain.elements",
-    "plain.toolbar",
-    "psycopg[binary]>=3.2.3",
+  "plain",
+  "plain.models",
+  "plain.auth",
+  "plain.code",
+  "plain.passwords",
+  "plain.sessions",
+  "plain.admin",
+  "plain.tailwind",
+  "plain.htmx",
+  "plain.elements",
+  "plain.toolbar",
+  "psycopg[binary]>=3.2.3",
 ]
 
 [dependency-groups]
-dev = [
-    "plain-dev",
-    "plain-pytest",
-]
+dev = ["plain-dev", "plain-pytest"]
 
 [tool.plain.dev.services]
-postgres = {cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres"}
+postgres = { cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres" }
 
 [tool.plain.tailwind]
-version = "4.1.11"
+version = "4.2.1"
 
-[tool.plain.code.biome]
-version = "2.1.2"
+[tool.plain.code.oxc]
+version = "1.50.0"
