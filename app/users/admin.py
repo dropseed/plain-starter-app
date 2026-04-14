@@ -5,7 +5,7 @@ from plain.admin.views import (
     AdminViewset,
     register_viewset,
 )
-from plain.models.forms import ModelForm
+from plain.postgres.forms import ModelForm
 from plain.urls import reverse
 
 from .models import User
@@ -35,7 +35,7 @@ class UserAdmin(AdminViewset):
 
         def get_object_links(self, obj: User) -> dict[str, str]:
             links = super().get_object_links(obj)
-            links["Impersonate"] = reverse("admin:impersonate:start", obj.id)
+            links["Impersonate"] = reverse("admin:impersonate:start", id=obj.id)
             return links
 
     class DetailView(AdminModelDetailView):
@@ -43,7 +43,7 @@ class UserAdmin(AdminViewset):
 
         def get_links(self) -> dict[str, str]:
             links = super().get_links()
-            links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
+            links["Impersonate"] = reverse("admin:impersonate:start", id=self.object.id)
             return links
 
     class UpdateView(AdminModelUpdateView):
@@ -53,5 +53,5 @@ class UserAdmin(AdminViewset):
 
         def get_links(self) -> dict[str, str]:
             links = super().get_links()
-            links["Impersonate"] = reverse("admin:impersonate:start", self.object.id)
+            links["Impersonate"] = reverse("admin:impersonate:start", id=self.object.id)
             return links

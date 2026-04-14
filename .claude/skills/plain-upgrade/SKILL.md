@@ -11,7 +11,7 @@ description: Upgrades Plain packages and applies required migration changes. Use
 uv run plain upgrade [package-names...]
 ```
 
-This will show which packages were upgraded (e.g., `plain-models: 0.1.0 -> 0.2.0`).
+This will show which packages were upgraded (e.g., `plain-postgres: 0.1.0 -> 0.2.0`).
 
 ## 2. Apply code changes for each upgraded package
 
@@ -22,10 +22,14 @@ For each package that was upgraded:
 3. If it says "No changes required", skip to next package
 4. Apply any required code changes
 
-## 3. Validate
+## 3. Update agent rules and skills
+
+Run `uv run plain agent install` to sync any updated rules and skills from the upgraded packages.
+
+## 4. Validate
 
 1. Run `uv run plain fix` to fix formatting
-2. Run `uv run plain preflight` to validate configuration
+2. Run `uv run plain check` to validate (linting, preflight, migrations, tests)
 
 ## Guidelines
 

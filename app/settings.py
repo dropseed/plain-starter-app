@@ -3,7 +3,7 @@ URLS_ROUTER = "app.urls.AppRouter"
 TIME_ZONE = "America/Chicago"
 
 INSTALLED_PACKAGES = [
-    "plain.models",
+    "plain.postgres",
     "plain.tailwind",
     "plain.auth",
     "plain.passwords",
@@ -16,7 +16,6 @@ INSTALLED_PACKAGES = [
     "app.users",
 ]
 
-AUTH_USER_MODEL = "users.User"
 AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [

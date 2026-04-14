@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = "~=3.13.0"
 dependencies = [
   "plain",
-  "plain.models",
+  "plain.postgres",
   "plain.auth",
   "plain.code",
   "plain.passwords",
@@ -16,14 +16,14 @@ dependencies = [
   "plain.htmx",
   "plain.elements",
   "plain.toolbar",
-  "psycopg[binary]>=3.2.3",
+  "psycopg>=3.2.3",
 ]
 
 [dependency-groups]
 dev = ["plain-dev", "plain-pytest"]
 
 [tool.plain.dev.services]
-postgres = { cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:15 postgres" }
+postgres = { cmd = "docker run --name app-postgres --rm -p 54321:5432 -v $(pwd)/.plain/dev/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres:17 postgres" }
 
 [tool.plain.tailwind]
 version = "4.2.1"

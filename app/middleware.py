@@ -6,11 +6,11 @@ from plain.utils import timezone
 
 
 class TimezoneMiddleware(HttpMiddleware):
-    def process_request(self, request: Request) -> Response:
+    def before_request(self, request: Request) -> Response | None:
         user = get_request_user(request)
         if user and user.time_zone:
             timezone.activate(user.time_zone)
         else:
             timezone.deactivate()
 
-        return self.get_response(request)
+        return None
