@@ -16,7 +16,7 @@ dependencies = [
   "plain.htmx",
   "plain.elements",
   "plain.toolbar",
-  "psycopg>=3.2.3",
+  "psycopg[binary]>=3.2.3",
 ]
 
 [dependency-groups]
