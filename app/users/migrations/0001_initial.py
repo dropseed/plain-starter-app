@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("is_admin", postgres.BooleanField(default=False)),
-                ("created_at", postgres.DateTimeField(auto_now_add=True)),
+                ("created_at", postgres.DateTimeField(create_now=True)),
             ],
             options={
                 "constraints": [

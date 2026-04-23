@@ -15,7 +15,7 @@ class User(postgres.Model):
     email: str = types.EmailField()
     password: str = PasswordField()
     is_admin: bool = types.BooleanField(default=False)
-    created_at: datetime = types.DateTimeField(auto_now_add=True)
+    created_at: datetime = types.DateTimeField(create_now=True)
     time_zone: ZoneInfo | None = types.TimeZoneField(required=False, allow_null=True)
 
     model_options = postgres.Options(

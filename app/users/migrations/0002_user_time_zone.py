@@ -13,8 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="user",
             name="time_zone",
-            field=postgres.TimeZoneField(
-                allow_null=True, max_length=100, required=False
-            ),
+            field=postgres.TimeZoneField(allow_null=True, required=False),
         ),
     ]

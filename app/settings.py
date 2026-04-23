@@ -19,6 +19,7 @@ INSTALLED_PACKAGES = [
 AUTH_LOGIN_URL = "login"
 
 MIDDLEWARE = [
+    "plain.postgres.DatabaseConnectionMiddleware",
     "plain.sessions.middleware.SessionMiddleware",
     "app.middleware.TimezoneMiddleware",
     "plain.admin.AdminMiddleware",
