@@ -4,7 +4,7 @@ from typing import Any
 from plain.auth.views import AuthView
 from plain.passwords.views import PasswordLoginView, PasswordSignupView
 from plain.runtime import __version__
-from plain.views import TemplateView
+from plain.templates.views import TemplateView
 
 
 # An example of a base view that can be used on almost all app views,

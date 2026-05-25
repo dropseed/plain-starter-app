@@ -7,13 +7,32 @@ paths:
 
 ## Field Imports
 
-Import fields via `from plain.postgres import types` and annotate with Python types:
+Import fields via `from plain.postgres import types`. Don't add primitive
+annotations — the field stubs return typed descriptors that resolve to the
+right value type on instance access:
 
 ```python
 from plain.postgres import types
 
-name: str = types.TextField(max_length=100)
-car: Car = types.ForeignKeyField("Car", on_delete=postgres.CASCADE)
+name = types.TextField(max_length=100)
+car = types.ForeignKeyField(Car, on_delete=postgres.CASCADE)
+```
+
+For string forward references (`"self"`, `"OtherModel"`), the type checker
+can't infer the target type from the string — annotate explicitly so
+instance access keeps its type:
+
+```python
+parent: TreeNode | None = types.ForeignKeyField("self", on_delete=postgres.CASCADE, allow_null=True)
+```
+
+For `JSONField` and `EncryptedJSONField`, the stub returns `Any` (the
+runtime class isn't generic over its value shape), so annotate explicitly
+to preserve typing:
+
+```python
+parameters: dict[str, Any] | None = types.JSONField(required=False, allow_null=True)
+config: dict | None = types.EncryptedJSONField(required=False, allow_null=True)
 ```
 
 Do NOT import field classes directly from `plain.postgres` or `plain.postgres.fields`.
@@ -36,7 +55,7 @@ Get approval before writing any model code or generating migrations.
 `uv run plain postgres sync` runs three steps: create migrations → apply migrations → converge schema.
 
 - **Migrations** handle tables and columns (CreateModel, AddField, AlterField, etc.)
-- **Convergence** handles indexes, constraints, and FK constraints — declared on the model but NOT serialized into migration files. (FK _columns_ like `team_id bigint` are created by migrations; the actual `FOREIGN KEY` constraint is added by convergence.)
+- **Convergence** handles indexes, constraints, FK constraints, and storage parameters — declared on the model but NOT serialized into migration files. (FK _columns_ like `team_id bigint` are created by migrations; the actual `FOREIGN KEY` constraint is added by convergence.)
 
 This means: when you add an `Index` or `UniqueConstraint` to a model, no migration is generated. The converge step reads the live model class and syncs the database directly. Don't worry about serializing constraint expressions (like `Lower()`) for migrations — they never go there.
 
@@ -49,6 +68,7 @@ Run `uv run plain docs postgres` for full workflow details.
 Use `Model.query` to build querysets (e.g., `User.query.filter(is_active=True)`).
 
 - Use `select_related()` for FK access in loops, `prefetch_related()` for reverse/M2N
+- A foreign key returns a partial related object: `obj.author` and `obj.author.id` are query-free; other fields load on first access. There is no `obj.author_id` — use `obj.author.id`
 - Use `.annotate(Count(...))` instead of calling `.count()` per row
 - Fetch all data in the view — templates should never trigger queries
 - Use `.exists()` not `.count() > 0`, `.count()` not `len(qs)`

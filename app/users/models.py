@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import hashlib
-from datetime import datetime
-from zoneinfo import ZoneInfo
 
 from plain import postgres
 from plain.passwords.types import PasswordField
@@ -12,11 +10,11 @@ from plain.postgres.functions import Lower
 
 @postgres.register_model
 class User(postgres.Model):
-    email: str = types.EmailField()
-    password: str = PasswordField()
-    is_admin: bool = types.BooleanField(default=False)
-    created_at: datetime = types.DateTimeField(create_now=True)
-    time_zone: ZoneInfo | None = types.TimeZoneField(required=False, allow_null=True)
+    email = types.EmailField()
+    password = PasswordField()
+    is_admin = types.BooleanField(default=False)
+    created_at = types.DateTimeField(create_now=True)
+    time_zone = types.TimeZoneField(required=False, allow_null=True)
 
     model_options = postgres.Options(
         constraints=[

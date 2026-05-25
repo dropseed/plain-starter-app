@@ -17,6 +17,8 @@ dependencies = [
   "plain.elements",
   "plain.toolbar",
   "psycopg[binary]>=3.2.3",
+  "plain-assets>=0.3.0",
+  "plain-templates>=0.3.0",
 ]
 
 [dependency-groups]

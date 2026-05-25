@@ -9,11 +9,11 @@ from . import views
 class AppRouter(Router):
     namespace = ""
     urls = [
-        include("assets/", AssetsRouter),
-        include("admin/", AdminRouter),
-        path("logout/", LogoutView, name="logout"),
-        path("login/", views.LoginView, name="login"),
-        path("private/", views.ExamplePrivateView),
-        path("signup/", views.SignupView, name="signup"),
+        include("assets", AssetsRouter),
+        include("admin", AdminRouter),
+        path("logout", LogoutView, name="logout"),
+        path("login", views.LoginView, name="login"),
+        path("private", views.ExamplePrivateView),
+        path("signup", views.SignupView, name="signup"),
         path("", views.IndexView, name="index"),
     ]
