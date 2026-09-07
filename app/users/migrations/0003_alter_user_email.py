@@ -5,14 +5,12 @@ from plain.postgres import migrations
 
 
 class Migration(migrations.Migration):
-    dependencies = [
-        ("users", "0002_user_time_zone"),
-    ]
+    dependencies = (("users", "0002_user_time_zone"),)
 
-    operations = [
+    operations = (
         migrations.AlterField(
             model_name="user",
             name="email",
             field=postgres.EmailField(),
         ),
-    ]
+    )

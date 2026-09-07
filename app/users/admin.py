@@ -14,7 +14,7 @@ from .models import User
 class UserForm(ModelForm):
     class Meta:
         model = User
-        fields = ["email"]
+        fields = ("email",)
 
 
 @register_viewset
@@ -22,15 +22,13 @@ class UserAdmin(AdminViewset):
     class ListView(AdminModelListView):
         model = User
         allow_global_search = True
-        fields = [
+        fields = (
             "id",
             "email",
             "created_at__date",
-        ]
-        queryset_order = ["-created_at"]
-        search_fields = [
-            "email",
-        ]
+        )
+        queryset_order = ("-created_at",)
+        search_fields = ("email",)
         nav_icon = "people-fill"
 
         def get_object_links(self, obj: User) -> dict[str, str]:

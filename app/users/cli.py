@@ -6,7 +6,6 @@ from plain.cli import register_cli
 @click.group()
 def cli() -> None:
     """Custom app.users commands"""
-    pass
 
 
 @cli.command()

@@ -10,9 +10,9 @@ from plain.postgres import migrations
 class Migration(migrations.Migration):
     initial = True
 
-    dependencies = []
+    dependencies = ()
 
-    operations = [
+    operations = (
         migrations.CreateModel(
             name="User",
             fields=[
@@ -40,4 +40,4 @@ class Migration(migrations.Migration):
                 ],
             },
         ),
-    ]
+    )

@@ -8,7 +8,7 @@ from . import views
 
 class AppRouter(Router):
     namespace = ""
-    urls = [
+    urls = (
         include("assets", AssetsRouter),
         include("admin", AdminRouter),
         path("logout", LogoutView, name="logout"),
@@ -16,4 +16,4 @@ class AppRouter(Router):
         path("private", views.ExamplePrivateView),
         path("signup", views.SignupView, name="signup"),
         path("", views.IndexView, name="index"),
-    ]
+    )
